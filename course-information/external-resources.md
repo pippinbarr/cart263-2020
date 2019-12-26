@@ -21,3 +21,4 @@ __Note:__
 - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) - Good introduction to the web and web programming more generally from the Mozilla Foundation
 - [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - The Mozilla Foundation again with a complete guide to the language (gets pretty advanced)
 - [Eloquent JavaScript](https://eloquentjavascript.net/) by Marijn Haverbeke - A wonderful introduction to JavaScript, though it does get quite advanced quite quickly (might be good to read after this course)
+- [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) - Universal principles of programming as applied to JavaScript (includes some pretty advanced ideas, but very interesting)
