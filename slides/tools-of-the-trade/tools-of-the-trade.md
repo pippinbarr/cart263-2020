@@ -1,5 +1,3 @@
-### CART 263 / Pippin Barr
-
 # The tools of the trade
 
 ---

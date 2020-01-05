@@ -1,5 +1,3 @@
-### CART 263 / Pippin Barr
-
 # Activity: Music Box
 
 ---

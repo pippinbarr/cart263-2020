@@ -1,4 +1,8 @@
-## Index
+## Quick links
+
+- [External Resources](./external-resources.md)
+
+## Contents
 
 - [Week 1](#week-1) - JavaScript review
 - [Week 2](#week-2) - HTML, CSS, and the DOM
@@ -34,22 +38,6 @@
 
 ## Homework
 - [__Assignment 1__](../assignments/assignment1/README.md)
-
-## Resources
-- __JavaScript__
-  - [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
-  - [Free Code Camp](https://www.freecodecamp.org/)
-  - [The Modern JavaScript Tutorial](https://javascript.info/)
-  - [Mozilla JavaScript Documentation](https://developer.mozilla.org/bm/docs/Web/JavaScript)
-  - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
-  - [w3schools JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
-  - [Eloquent JavaScript](https://eloquentjavascript.net/)
-  - [Inheritance in ES5 with `prototype`](https://medium.com/@dange.laxmikant/simplified-inheritance-in-js-es5-way-60b4ff19b008)
-  - [w3schools JavaScript Exercises](https://www.w3schools.com/js/js_exercises.asp)
-- __p5__
-  - [Transition from Processing to p5](https://github.com/processing/p5.js/wiki/Processing-transition)
-  - [p5 Learn](https://p5js.org/learn/)
-  - [p5 Reference](https://p5js.org/reference/)
 
 ## Exercises
 

@@ -1,6 +1,4 @@
-### CART 263 / Pippin Barr
-
-# Introductions
+# CART 263
 
 ---
 
