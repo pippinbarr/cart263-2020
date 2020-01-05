@@ -10,7 +10,7 @@ Department of Design and Computation Arts
 (Send emails with a subject line of "[CART 263] Your subject here")  
 [www.pippinbarr.com](http://www.pippinbarr.com/)  
 Office: EV 6.745  
-Office hours: Fridays, 14:00-16:00 in TAG (EV 11.435)
+Office hours: Fridays, 14:00-16:00 in TAG Lab (EV 11.435)
 
 ## TAs
 
