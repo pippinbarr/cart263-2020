@@ -12,7 +12,7 @@ Department of Design and Computation Arts
 Office: EV 6.745  
 Office hours: Fridays, 14:00-16:00 in TAG Lab (EV 11.435)
 
-## TAs
+## Teaching Assistants
 
 Section A: Samuel Paré-Chouinard   <[spchouinard@gmail.com](mailto:spchouinard@gmail.com)>  
 Section B: Dana Ryashy <[danriachi@hotmail.com](danriachi@hotmail.com)>
