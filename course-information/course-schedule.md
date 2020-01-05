@@ -18,6 +18,7 @@
 - [Week 11](#week-11) - Sensors
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
+- ["Week 14"](#week-14) - [_Project 3 Due_]
 
 ---
 
@@ -38,9 +39,6 @@
 
 ## Homework
 - [__Assignment 1__](../assignments/assignment1/README.md)
-
-## Exercises
-
 
 ---
 
@@ -344,3 +342,6 @@
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ---
+
+# "Week 14"
+# [__Project 3__ due](../projects/project3/README.md)
