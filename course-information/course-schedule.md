@@ -35,7 +35,7 @@
 - __Circle Eater__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-circle-eater/), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater.zip))
 
 ## Example
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/breakout.zip))
+- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
 
 ## Homework
 - [__Assignment 1__](../assignments/assignment1/README.md)
