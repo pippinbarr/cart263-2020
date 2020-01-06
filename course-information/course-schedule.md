@@ -26,19 +26,20 @@
 # Introductions and JavaScript Review
 
 ## Topics
-- __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/introductions/introductions))
+- __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/introductions/), [Notes](https://www.github.com/pippinbarr/cart263-2020/slides/introductions/introductions.md))
 - __Tools of the trade__ ([Notes](./tools-of-the-trade.md))
-- __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/javascript-review))
+- __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/), [Notes](https://www.github.com/pippinbarr/cart263-2020/slides/javascript-review/javascript-review.md))
 - __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/p5-review), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review.zip))
 
 ## Activity
 - __Circle Eater__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-circle-eater/), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater.zip))
 
 ## Example
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
+- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
 
 ## Homework
-- Review your JavaScript!
+- Review your JavaScript
+- Remember or review HTML and CSS
 
 ---
 
