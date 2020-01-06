@@ -1,7 +1,7 @@
 # CART 263: Creative Computation II
 
 6 January – 9 April, 2020  
-Section A: Tuesdays, 8:30 – 12:30 in EV 5.635  
+Section A: Tuesdays, 13:30 – 17:30 in EV 5.635  
 Section B: Thursdays, 13:30 – 17:30 in EV 5.815  
 
 ## Instructor
@@ -16,7 +16,7 @@ Department of Design and Computation Arts
 
 Office: EV 6.745  
 Office hours location: TAG Research Centre, EV 11.435
-Office hours: Fridays, 14:00-16:00
+Office hours: Wednesdays, 14:00-16:00
 
 
 ## TAs
@@ -27,7 +27,7 @@ Section B: Dana Ryashy <[danriachi@hotmail.com](danriachi@hotmail.com)>
 
 ## Description
 
-Programming isn't just about knowing the syntax of your chosen programming language, it's also about leveraging the code already written by others in your quest to create truly interesting software. In this course we shift our focus from syntax to libraries as a way to extend on our capacities and to open up new avenues for creative expression through code. Students will spend their time encountering and learning to use a variety of libraries suited to creative coding while producing their own original work in a studio environment.
+Programming isn't just about knowing the ins and outs of your chosen programming language, it's also about leveraging the code already written by others in your quest to create truly interesting software. In this course we focus on libraries as a way to extend on our capacities and to open up new avenues for creative expression through code. Students will spend their time encountering and learning to use a variety of libraries suited to creative coding while producing their own original work in a studio environment.
 
 
 ## Learning Objectives
@@ -36,19 +36,14 @@ After completing this course, students should be able to:
 
 * Confidently search for, find, and use JavaScript libraries in their projects
 * Leverage the power of their programming alongside libraries to create compelling interactive experiences
-* Discuss and evaluate their creative coding projects
-
 
 ## Key activities
 
 ### Lectures
 Each class will include time spent with the instructor leading a session that introducing programming concepts and libraries through presentation, hands-on activities and code reviews.
 
-### Exercises
-Wherever possible, exercise sets will be made available for those students who wish to drill on the basics of the technical concepts introduced in class.
-
 ### Weekly assignments
-Most weeks will include an evaluated small assignment in which students will write their own code to practice and demonstrate their mastery of the technologies covered that week.
+Some weeks will include an evaluated small assignment in which students will write their own code to practice and demonstrate their mastery of the technologies covered.
 
 ### Projects
 There will be three graded projects during the course. Each will be used as an opportunity for students to practice and develop their programming skills within a provided framework, but with more room for their own creative ideas.
@@ -59,12 +54,12 @@ All classes will include significant time for students to work on their projects
 
 ## Expected skills
 
-Students are expected to already be familiar with the core elements of JavaScript programming (including project setup, variables, conditionals, loops, functions, arrays, and classes). A  review of this material will be conducted in the first class. Students are further expected to be fully committed to engaging with programming as not just a technical but as a creative practice, finding ways in which the technical skills they are learning can be deployed in expressive and interesting ways and articulating those ideas both in code and speech/writing.
+Students are expected to already be familiar with the core elements of JavaScript programming (including project setup, variables, conditionals, loops, functions, arrays, and object-oriented programming). A review of this material will be conducted in the first class. Students are further expected to be fully committed to engaging with programming as not just a technical but as a creative practice, finding ways in which the technical skills they are learning can be deployed in expressive and interesting ways and articulating those ideas in code.
 
 
 ## GitHub
 
-GitHub will replace the Moodle for this course. You are on GitHub now! The course GitHub repository will contain all the resources needed for the course. The issue tracker will be used to submit assignments and projects. Students will create their own GitHub repository to store, track, and present their work.
+The course GitHub repository will contain all the resources needed for the course. The issue tracker will be used to submit assignments and projects. Students will create their own GitHub repository to store, track, and present their work.
 
 
 ## Evaluation
@@ -88,7 +83,7 @@ Students have the right to write in French at Concordia. Pippin can read French 
 
 ## Policy
 
-* Late work of any kind will lose one letter grade per day late, beginning immediately after the deadline (e.g. if it is two days late, work that would have received a B would lose two letter grades and receive a C+)
+* Late work of any kind will lose one letter grade per day late, beginning immediately after the deadline (e.g. if it is two days late, work that would have received a A would lose two letter grades and receive a B+)
 * Concordia University has an [Academic Integrity Policy](https://www.concordia.ca/students/academic-integrity.html) which must be followed. Most importantly, although you may use code you find online, you __must credit the source by linking to it and indicating what you have used__.
 * It is departmental policy that three (3) unexcused absences results in failing the course.
 * It is class policy that being fifteen (15) or more minutes late without a reasonable excuse counts as an absence.
@@ -96,13 +91,13 @@ Students have the right to write in French at Concordia. Pippin can read French 
 
 ## Costs
 
-* The compulsory per semester [departmental fee ($50)](https://stores.concordia.ca/usage-of-consumable-materials-at-d-cart-labs-and-equipment-borrowing-privileges-from-cda-197b1b.html) covering lab maintenance, workshops, and equipment borrowing privileges from the depot.
+* The compulsory per semester [departmental fee ($50)](https://stores.concordia.ca/catalog/product/view/id/59193/s/usage-of-consumable-materials-at-d-cart-labs-and-equipment-borrowing-privileges-from-cda-197b1b/) covering lab maintenance, workshops, and equipment borrowing privileges from the depot.
 * Students who plan to use the lab computers will need [a CDA account ($45)](http://www.concordia.ca/finearts/cda/membership.html).
 * All software students are expected to use in the class will be free.
 
 ## The lab
 
-The practical work done in this class will take place in the computer labs EV 5.815 and EV 5.635 which contain dual-boot Mac/Windows machines. In order to use the machines you will need a CDA account (as above). In addition, it is vital to know and remember that **the computers do not keep work that you leave on their hard-drives**. As we will be working with version control, however, this should be a non-issue.
+The practical work done in this class will take place in the computer labs EV 5.815 and EV 5.635 which contain dual-boot Mac/Windows machines. In order to use the machines you will need a CDA account (as above). In addition, it is vital to know and remember that **the computers do not keep work that you leave on their hard-drives**. As we will be working with version control, however, this should not be an issue.
 
 You are of course welcome to use your own laptops and computers to the extent that you are able to install and manage the appropriate software on it, and the instructor will work to support that within reason.
 
@@ -112,6 +107,6 @@ You are of course welcome to use your own laptops and computers to the extent th
 (Click through for week-by-week information about what we will cover in the course.)
 
 
-## [Design and Computation Arts Syllabus](http://www.concordia.ca/content/dam/finearts/design/docs/DCART_syllabus.pdf)
+## [Design and Computation Arts Syllabus](https://github.com/pippinbarr/cart253-2019/blob/master/course_information/dcart-syllabus-2019.pdf)
 
 (Click through for the standard information from the Department of Design and Computation Arts that is to be included as part of all course outlines.)

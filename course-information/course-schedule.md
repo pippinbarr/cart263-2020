@@ -27,7 +27,7 @@
 
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/introductions/introductions))
-- __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/tools-of-the-trade/tools-of-the-trade))
+- __Tools of the trade__ ([Notes](./tools-of-the-trade.md))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/javascript-review))
 - __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/p5-review), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review.zip))
 

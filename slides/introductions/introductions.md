@@ -30,7 +30,7 @@
 ## Course schedule
 
 - The [Course Schedule](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/course-schedule.md) is on GitHub
-- There is a section for each week that will contain slides, notes, resources, assignments, etc.
+- There is a section for each week that will contain slides, notes, assignments, etc.
 
 ???
 
@@ -42,7 +42,7 @@
 
 - You are expected to follow along with the slides on your own computer, just click the appropriate link in the [Course Schedule](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/course-schedule.md)
 - When viewing the slides, press `F` for full-screen and `P` for presenter view
-- You can also view the information from the slides as __notes__ by clicking on the appropriate link - when you view them as notes the presenter notes are visible by default
+- You can also view the information from the slides as __notes__ by clicking on the appropriate link - when you view them as notes the presenter notes are visible
 
 ???
 
@@ -59,12 +59,9 @@
 
 ---
 
-## Course software setup
+## Tools of the trade
 
-- There is a page about [Software Setup](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/course-software-setup.md)
-- This is intended to help those of you who want to use your own computers to do so
-- Hopefully you've already done this
-- If you haven't, do it now quietly while still listening to the class
+- There is a page about the [Tools of the Trade](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/tools-of-the-trade.md) we will use, including installation instructions if you want to use your own computer
 
 ---
 
@@ -85,7 +82,6 @@
 - Atom (a free text-editor)
 - Chrome/Firefox (a free web browser)
 - GitHub Desktop (a free version control application)
-- (Alongside various free JavaScript libraries and tools)
 
 ---
 
