@@ -67,7 +67,7 @@ The course GitHub repository will contain all the resources needed for the cours
 Specific evaluation requirements will be provided when assigned.
 
 * Weekly exercises (10%)
-   * 8 pass/fail exercises worth 1.25% each
+   * 5 pass/fail exercises worth 2% each
 * Projects (70%)
   * Project 1 (10%)
   * Project 2 (20%)

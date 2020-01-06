@@ -65,26 +65,6 @@
 
 ---
 
-## Course evaluation
-
-- The course will be evaluated as per the elements listed in the [Course Outline](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/course-outline.md)
-- 8 one-week assignments worth a total of 10%
-- 3 projects
-  - Project 1 is worth 10%
-  - Project 2 is worth 20%
-  - Project 3 is worth 40%
-- A participation grade worth a total of 20%
-
----
-
-## Course software
-
-- Atom (a free text-editor)
-- Chrome/Firefox (a free web browser)
-- GitHub Desktop (a free version control application)
-
----
-
 ## Introducing Pippin
 
 - Office: EV 6.745

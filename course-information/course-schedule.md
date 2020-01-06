@@ -38,7 +38,7 @@
 - __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
 
 ## Homework
-- [__Assignment 1__](../assignments/assignment1/README.md)
+- Review your JavaScript!
 
 ---
 
@@ -53,8 +53,9 @@
 
 ## Resources
 
-## Hand-in
+## Homework
 - [__Assignment 1__](../assignments/assignment1/README.md)
+- [__Project 1__](../projects/project1/README.md) (Start thinking about it)
 
 ---
 
@@ -71,32 +72,11 @@
 - __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2020/examples/jquery/sixshooter.zip))
 
 ## Hand-in
-- [__Assignment 2__](../assignments/assignment2/README.md)
+- [__Assignment 1__](../assignments/assignment1/README.md)
 
 ## Homework
-- [__Assignment 3__](../assignments/assignment3/README.md)
+- [__Assignment 2__](../assignments/assignment2/README.md)
 - [__Project 1__](../projects/project1/README.md)
-
-## Resources
-- jQuery
-  - [jQuery API](https://api.jquery.com)
-  - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) (a place to look up the possible events that can be checked with `on()`)
-  - [jQuery Learning Centre](https://learn.jquery.com/)
-  - [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
-  - [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
-  - [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/)
-  - [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
-  - [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
-- HTML/CSS
-  - [w3schools HTML Tutorial](https://www.w3schools.com/html/)
-  - [w3schools CSS Tutorial](https://www.w3schools.com/css/)
-  - [HTMLDog Tutorials](http://www.htmldog.com/guides/)
-  - [Codecademy HTML Tutorial](https://www.codecademy.com/learn/learn-html)
-  - [Codecademy CSS Tutorial](https://www.codecademy.com/learn/learn-css)
-
-## Exercises
-- [w3schools jQuery Exercises](https://www.w3schools.com/jquery/exercise_jq.asp)
-- [A Smarter Way to Learn jQuery Exercises](http://www.asmarterwaytolearn.com/jquery/index-of-exercises.html) [Need to register]
 
 ---
 
@@ -115,22 +95,11 @@
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/beach-party.zip))
 - __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/), [Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
-
 ## Hand-in
-- [__Assignment 3__](../assignments/assignment3/README.md)
+- [__Assignment 2__](../assignments/assignment2/README.md)
+
 ## Homework
 - [__Project 1__](../projects/project1/README.md)
-
-## Resources
-- [jQuery UI Homepage](https://jqueryui.com/)
-- [Getting Started with jQuery UI](http://learn.jquery.com/jquery-ui/getting-started/)
-- [Learning jQuery UI (Official)](http://learn.jquery.com/jquery-ui/)
-- [jQuery UI Demos](https://jqueryui.com/demos/)
-- [jQuery UI API](https://api.jqueryui.com/)
-- [jQuery UI Tutorial from Tutorials Point](https://www.tutorialspoint.com/jqueryui/)
-
-## Exercises
-- [w3resource jQuery UI exercises](https://www.w3resource.com/jquery-ui-exercises/1/index.php)
 
 ---
 
@@ -139,34 +108,21 @@
 
 ## Topics
 - __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/))
-- __Phaser 2/CE__ ([Homepage](https://github.com/photonstorm/phaser-ce), [Examples](http://phaser.io/examples), [API](https://photonstorm.github.io/phaser-ce/))
+- Note: __Phaser 2/CE__ ([Homepage](https://github.com/photonstorm/phaser-ce), [Examples](http://phaser.io/examples), [API](https://photonstorm.github.io/phaser-ce/))
 
 ## "Activity"
 - Making Your First Phaser 3 Game ([Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Tutorial Code](https://phaser.io/tutorials/making-your-first-phaser-3-game/phaser3-tutorial-src.zip), [Pippin's Hyper-Commented Tutorial Code](../activities/phaser/))
 
 ## Examples
 - [Let's Play: Ancient Greek Punishment: Inversion Edition (Phaser 3)](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
-- [SNAKISMS (Phaser 2)](https://github.com/pippinbarr/SNAKISMS/)
 
 ## Studio time for [__Project 1__](../projects/project1/README.md)
 
 ## Hand-in
 - [__Project 1__](../projects/project1/README.md)
-## Homework
-- [__Assignment 4__](../assignments/assignment4/README.md)
-- [__Project 2__](../projects/project2/README.md)
 
-## Resources
-- Phaser 3
-  - [Phaser 3 Homepage](https://phaser.io/)
-  - [Phaser 3 Examples](http://labs.phaser.io/)
-  - [Phaser 3 API](https://photonstorm.github.io/phaser3-docs)
-  - [Making Your First Phaser 3 Game](https://phaser.io/tutorials/making-your-first-phaser-3-game)
-- Phaser 2/CE
-  - [Phaser CE Homepage](https://github.com/photonstorm/phaser-ce)
-  - [Phaser 2 Examples](http://phaser.io/examples)
-  - [Phaser CE Examples](https://codepen.io/collection/AMbZgY/)
-  - [Phaser CE API](https://photonstorm.github.io/phaser-ce/)
+## Homework
+- [__Project 2__](../projects/project2/README.md) (Start thinking now!)
 
 ---
 
@@ -186,19 +142,10 @@
 - __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
 - __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/responsivevoice/nonsense-generator/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
 
-## Hand-in
-- [__Assignment 4__](../assignments/assignment4/README.md)
 ## Homework
-- [__Assignment 5__](../assignments/assignment5/README.md)
+- [__Assignment 3__](../assignments/assignment3/README.md)
 - [__Project 2__](../projects/project2/README.md)
 
-## Resources
-- ResponsiveVoice
-  - [ResponsiveVoice Homepage](https://responsivevoice.org/)
-  - [ResponsiveVoice API](https://responsivevoice.org/api/)
-- annyang
-  - [annyang Homepage](https://www.talater.com/annyang/)
-  - [annyang API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
 ---
 
@@ -222,10 +169,9 @@
 - __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
 
 ## Hand-in
-- [__Project 2__](../projects/project2/README.md)
+- [__Assignment 3__](../assignments/assignment3/README.md)
 
 ## Homework
-- [__Assignment 6__](../assignments/assignment6/README.md)
 - [__Project 3__](../projects/project3/README.md)
 
 ---
@@ -233,9 +179,6 @@
 
 # Reading Week
 # No Class
-
-## Hand-in
-- [__Assignment 5__](../assignments/assignment5/README.md)
 
 ## Homework
 - [__Project 2__](../projects/project2/README.md)
@@ -253,7 +196,7 @@
 
 ## Hand-in
 - [__Project 2__](../projects/project2/README.md)
-- __NOTE:__ A one-week extension is available for Project 2 for anyone who needs it.
+
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
 
@@ -275,10 +218,8 @@
 - __Page Composition__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/pizzicato/page-composition/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/pizzicato/page-composition/))
 - __Drum Machine__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/gibber/drum-machine/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/gibber/drum-machine/))
 
-## Hand-in
-- [__Assignment 6__](../assignments/assignment6/README.md)
 ## Homework
-- [__Assignment 7__](../assignments/assignment7/README.md)
+- [__Assignment 4__](../assignments/assignment4/README.md)
 - [__Project 3__](../projects/project3/README.md)
 
 ---
@@ -295,16 +236,11 @@
 - __Let's Play: Ancient Greek Punishment: Teaches Typing__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing/), [Source Code](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing/)) [Uses localStorage to track whether or not the player has unlocked the Camus level.]
 
 ## Hand-in
-- [__Assignment 7__](../assignments/assignment7/README.md)
+- [__Assignment 4__](../assignments/assignment4/README.md)
 
 ## Homework
-- [__Assignment 8__](../assignments/assignment8/README.md)
+- [__Assignment 5__](../assignments/assignment5/README.md)
 - [__Project 3__](../projects/project3/README.md)
-
-## Resources
-- localStorage
-  - [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-  - [HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/)
 
 ---
 
@@ -320,7 +256,8 @@
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Hand-in
-- [__Assignment 8__](../assignments/assignment8/README.md)
+- [__Assignment 5__](../assignments/assignment5/README.md)
+
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
 
