@@ -47,13 +47,13 @@ div.remark-slide-content.title {
   font-size: 3em;
   /* -webkit-text-stroke-width: 2px; */
   /* -webkit-text-stroke-color: black; */
-  color: rgb(80,120,180);
+  color: rgb(0,0,200);
 }
 
 .remark-slide-content h2 {
   font-size: 1.2em;
   color: rgb(80,120,180);
-  border-bottom: 2px solid rgb(80,120,180);
+  border-bottom: 2px solid rgb(0,0,200);
 }
 
 .remark-slide-content h3 {
