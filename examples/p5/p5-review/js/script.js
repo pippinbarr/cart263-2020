@@ -107,7 +107,7 @@ function updateClown() {
 // handleMovement()
 //
 // Moves clown based on velocity
-handleMovement() {
+function handleMovement() {
   // Classic physics step update to add velocity to position
   clown.x += clown.vx;
   clown.y += clown.vy;
