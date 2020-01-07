@@ -2,13 +2,23 @@
 
 This page provides a review of the core software used in this course, along with installation notes for those who want to run the software on their own computer.
 
-## Chrome/Firefox
+## Browser
 
-As we are doing web development we will need a __web browser__. In this course we recommend using either Chrome or Firefox, both free, popular browsers. The most important element of the browser you use it having access to the __JavaScript Console__. In Chrome it is accessed via `View > Developer > JavaScript Console`. In Firefox it is accessed via `Tools > Web Developer > Web Console`.
+As we are doing web development we will need a __web browser__. In this course we recommend using either
+__Chrome__ or __Firefox__, both free, popular browsers. The most important element of the browser you use it having access to the __JavaScript Console__. In Chrome it is accessed via `View > Developer > JavaScript Console`. In Firefox it is accessed via `Tools > Web Developer > Web Console`.
 
-## Atom
+#### Installing Chrome
 
-Atom is a __text editor__. It's a nice, free, open-source text editor. Even if you prefer some other text editor, you should use Atom in this class.
+Go to [https://www.google.ca/chrome](https://www.google.ca/chrome) and follow the instructions.
+
+#### Installing Firefox
+
+Go to [https://www.mozilla.org/firefox/][https://www.mozilla.org/en-CA/firefox/] and follow the instructions.
+
+
+## Text editor
+
+Our text editor in this class is __Atom__. It's a nice, free, open-source text editor. Even if you prefer some other text editor, you should use Atom in this class.
 
 #### Installing Atom
 
@@ -21,7 +31,7 @@ One great thing about Atom is that it's extensible using __packages__. You can e
 - atom-live-server (already installed on CDA machines)
 - prettier-atom
 
-#### Installing packages
+#### Installing Atom packages
 
 1. Run Atom
 1. Go to Preferences/Settings
@@ -31,9 +41,9 @@ One great thing about Atom is that it's extensible using __packages__. You can e
 
 Now it's installed! (You should be able to go to the `Packages` menu at the top of the screen and see the package listed as an option there.)
 
-## Git
+## Version control
 
-We use __version control__ as a central part of this course. Specifically, we will use version control software called Git and an online repository host called GitHub. Git can be used on the command line, but to make our lives easier we'll use software. You can choose between two options: GitHub Desktop, or Atom's built in Git tools.
+We use version control as a central part of this course. Specifically, we will use version control software called __Git__ and an online repository host called __GitHub__. Git can be used on the command line, but to make our lives easier we'll use software. You can choose between two options: GitHub Desktop, or Atom's built in Git tools.
 
 ### GitHub Desktop
 
