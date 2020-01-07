@@ -45,9 +45,9 @@ div.remark-slide-content.title {
 
 .remark-slide-content h1 {
   font-size: 3em;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  color: rgb(100,140,200);
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: black; */
+  color: rgb(80,120,180);
 }
 
 .remark-slide-content h2 {

@@ -29,7 +29,7 @@
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/introductions/), [Notes](../slides/introductions/introductions.md))
 - __Tools of the trade__ ([Notes](./tools-of-the-trade.md))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/javascript-review/), [Notes](../slides/javascript-review/javascript-review.md))
-- __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/p5-review), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/p5-review.zip))
+- __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/circle-eater/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/circle-eater), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/circle-eater.zip))
 
 ## Activity
 - __Circle Eater__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-circle-eater/), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/p5/circle-eater.zip))
