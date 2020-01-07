@@ -52,7 +52,8 @@ div.remark-slide-content.title {
 
 .remark-slide-content h2 {
   font-size: 1.2em;
-  border-bottom: 2px solid rgb(100,140,200);
+  color: rgb(80,120,180);
+  border-bottom: 2px solid rgb(80,120,180);
 }
 
 .remark-slide-content h3 {
