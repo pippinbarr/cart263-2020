@@ -266,13 +266,9 @@ function draw() {
 
 ---
 
-## Extra for later: Being a conscientious programmer
+## 11. Done.
 
-Improve the code by
-1. Defining a function that puts the food in a random position and calling that function in `setup()` and the collision checking function instead of directly setting the food's position
-1. Define constants that determine how much the player shrinks and grows and use those variables instead of hard-coded numbers
-1. Add a color property to the food and player and use that instead of a hard-coded fill color
-1. Consider translating the whole thing into an object-oriented version! You could even use inheritance since the food and player have a lot of similarities that could be captured by a parent class
+At this point you should have a fully working version of this simple game.
 
 ---
 

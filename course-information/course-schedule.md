@@ -38,8 +38,9 @@
 - __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
 
 ## Homework
-- Review your JavaScript
-- Remember or review HTML and CSS
+- Review your JavaScript (don't forget the [External Resources](./external-resources.md))
+- Review HTML and CSS (don't forget the [External Resources](./external-resources.md))
+- (Optional) [__Challenge 1__](../assignments/challenge1/README.md)
 
 ---
 
