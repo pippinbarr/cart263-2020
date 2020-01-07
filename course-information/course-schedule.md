@@ -25,6 +25,10 @@
 # Week 1
 # Introductions and JavaScript Review
 
+## Frontmatter
+- Waitlist
+- JavaScript first-timers
+
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/introductions/), [Notes](../slides/introductions/introductions.md))
 - __Tools of the trade__ ([Notes](./tools-of-the-trade.md))
@@ -38,6 +42,7 @@
 - __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/p5/oop-breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/p5/oop-breakout.zip))
 
 ## Homework
+- Make a coursework repository (it should probably be called something like `cart263`)
 - Review your JavaScript (don't forget the [External Resources](./external-resources.md))
 - Review HTML and CSS (don't forget the [External Resources](./external-resources.md))
 - (Optional) [__Challenge 1__](../assignments/challenge1/README.md)
