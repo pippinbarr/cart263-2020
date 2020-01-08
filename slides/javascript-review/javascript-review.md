@@ -248,7 +248,7 @@ console.log(greeting); // "Hello, World!"
 let sentence = "My favorite number is ";
 let number = 7;
 let sayFavoriteNumber = sentence + number + "!";
-console.log(greeting); // "My favorite number is 7!"
+console.log(sayFavoriteNumber); // "My favorite number is 7!"
 ```
 
 ---
@@ -602,7 +602,7 @@ let square = function (x) {
   return x * x;
 };
 
-console.log(mySquareFunction(10)); // 100
+console.log(square(10)); // 100
 ```
 
 - Note the difference in syntax here

@@ -34,7 +34,8 @@ __If you find something amazing to add to this then email Pippin!__
 
 ### Tutorials
 
-- [freeCodeCamp Introduction to JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
+- [freeCodeCamp Introduction to JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/) - Pippin's current favorite
+- [Khan Academy tutorials on Computer Programming](https://www.khanacademy.org/computing/computer-programming) - Includes JavaScript
 - [Codecademy Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) - Interactive lessons in the basics of JavaScript (they have other material too)
 - [W3 Schools JavaScript Tutorial](https://www.w3schools.com/js/) - Bare bones but solid tutorial from W3 schools
 - [The Modern JavaScript Tutorial](https://javascript.info/)
