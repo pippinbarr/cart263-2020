@@ -63,6 +63,10 @@ __If you find something amazing to add to this then email Pippin!__
 
 ## CSS
 
+### Reference
+
+- [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
 ### Tutorials
 
 - [freeCodeCamp CSS Tutorial](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)

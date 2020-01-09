@@ -53,15 +53,18 @@
 # HTML, CSS, and the DOM
 
 ## Topics
+- __HTML__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/html-basics/), [Notes](../slides/html-basics/html-basics.md))
+- __CSS__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/css-basics/), [Notes](../slides/css-basics/css-basics.md))
+- __DOM__
 
 ## Activity
+- __Pixel Painter__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-pixel-painter/), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/dom/pixel-painter/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/dom/pixel-painter/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/dom/pixel-painter.zip))
 
 ## Example
-
-## Resources
+- __Notifications__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/dom/notifications/), [Source Code](https://github.com/pippinbarr/cart263-2020/tree/master/examples/dom/notifications/), [Download Source Code](https://pippinbarr.github.io/cart263-2020/examples/dom/notifications.zip))
 
 ## Homework
-- [__Assignment 1__](../assignments/assignment1/README.md)
+- [__Assignment 1: Pixel Painter Pro__](../assignments/assignment1/README.md)
 - [__Project 1__](../projects/project1/README.md) (Start thinking about it)
 
 ---

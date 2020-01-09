@@ -1,0 +1,45 @@
+
+body {
+  width: 640px;
+  margin: 0 auto; /* To center the content */
+  padding-top: 50px;
+}
+
+/* Overall container for each app */
+.app {
+  width: 64px; /* To make centring work better. */
+  padding-right: 32px; /* To add gaps between apps */
+  font-family: Helvetica, sans-serif;
+  display: inline-block; /* So apps appear in a row */
+}
+
+/* The icon element of an app */
+.icon {
+  width: 64px;
+  height: 64px;
+  /* Linear gradients look nice! */
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,121,100,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 20%; /* To give it the old iOS bevel */
+}
+
+/* The label element of an app */
+.label {
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* The badge element of an app */
+.badge {
+  opacity: 0; /* Invisible to begin with. */
+  position: relative; /* Relative to container makes it a bit easier to position */
+  top: 20px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* A hack to allow vertical centering */
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 50%; /* A circle */
+  text-align: center;
+}
