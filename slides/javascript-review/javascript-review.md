@@ -20,7 +20,7 @@
 
 - The __language of interactivity__ on the web
 - __Incredibly popular__
-- It Has __countless libraries and extensions available__
+- Has __countless libraries and extensions available__
 - __Not just for the web__
 
 ???
@@ -683,7 +683,7 @@ let firstValue = numbers.shift();
 console.log(firstValue); // 1
 console.log(numbers); // [2,3,4,5]
 numbers.unshift(100);
-console.log(numbers); // [100,2,3,4]
+console.log(numbers); // [100,2,3,4,5]
 ```
 
 ---
