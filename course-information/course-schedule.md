@@ -1,6 +1,7 @@
 ## Quick links
 
 - [External Resources](./external-resources.md)
+- [Git Cheatsheet](../cheatsheets/git.md)
 
 ## Contents
 
