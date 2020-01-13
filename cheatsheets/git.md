@@ -80,7 +80,11 @@ Click the push button at the bottom right.
 
 1. `git push`
 
-## Discarding changes
+## Undo!
+
+Sometimes you need to go back in time. See also: [How to undo (almost) anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
+
+### Discarding changes
 
 If you just did some amount of work that sucks and you want to reset to where you were at the end of the previous commit, you can!
 
@@ -95,10 +99,6 @@ First unstaging it if necessary, right click the file you want to discard change
 #### Command line
 
 1. `git checkout filename`
-
-## Undo!
-
-Sometimes you need to go back in time. See also: [How to undo (almost) anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
 
 ### Undoing a commit (that you have NOT pushed)
 
