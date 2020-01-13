@@ -22,8 +22,8 @@
 
 ---
 
-# Week 1
-# Introductions and JavaScript Review
+# ~~Week 1~~
+# ~~Introductions and JavaScript Review~~
 
 ## Frontmatter
 - Waitlist
@@ -52,10 +52,13 @@
 # Week 2
 # HTML, CSS, and the DOM
 
+## Frontmatter
+- Download the [Empty Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip) to follow along
+
 ## Topics
 - __HTML__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/html-basics/), [Notes](../slides/html-basics/html-basics.md))
 - __CSS__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/css-basics/), [Notes](../slides/css-basics/css-basics.md))
-- __DOM__
+- __DOM__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/dom-basics/), [Notes](../slides/dom-basics/dom-basics.md))
 
 ## Activity
 - __Pixel Painter__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-pixel-painter/), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/dom/pixel-painter/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/dom/pixel-painter/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/dom/pixel-painter.zip))

@@ -15,33 +15,31 @@
 ```css
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 1em;
 }
 
 #main-heading {
   font-size: 2em;
-  color: silver;
+  color: red;
 }
 
-.main-text {
-  font-family: Times, serif;
+.game-icon {
+  padding: 10px;
+  max-width: 100px;
 }
 ```
 
 - Note the basic form of a __selector__ (`body`, `#main-heading`, `.main-text`) and a set of __properties__ and __values__
 - Note that a selector can be
-  - a __tag name__ (e.g. `body`)
-  - an __id__ (prefixed with `#`, e.g. `#main-heading`)
-  - a __class__ (prefixed with `.`, e.g. `.main-text`)
-  - (There are some other kinds of selectors, but this will do for now.)
-
+- a __tag name__ (e.g. `body`)
+- an __id__ (prefixed with `#`, e.g. `#main-heading`)
+- a __class__ (prefixed with `.`, e.g. `.game-icon`)
 
 ???
 
 - Other selectors include "pseudo-classes", prefixed with `:`,
-  - e.g. `:hover` selects an element that has the mouse hovering over it
-  - e.g. `:nth-child(2)` selects the elements that are the second child of their parent
-  - e.g. `:invalid` selects form elements that are not validated successfully
+- e.g. `:hover` selects an element that has the mouse hovering over it
+- e.g. `:nth-child(2)` selects the elements that are the second child of their parent
+- e.g. `:invalid` selects form elements that are not validated successfully
 - More here: https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes
 
 ---
@@ -51,10 +49,10 @@ body {
 - In order to use CSS in at least a basic fashion you need to
 
 1. Be able to __select__ the element on the page you want to style
-  - For this reason it's very common to give any element you want to style an __id__ or __class__ so that it's easy to target
+- For this reason it's very common to give any element you want to style an __id__ or __class__ so that it's easy to target
 1. Know what __properties__ you want to manipulate on that element
-  - For this reason you will want to familiarize yourself with the available properties via a reference like [Mozilla's CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-  - Be aware there are __many__ properties, you won't be able to learn them all, and you will almost certainly end up taking inspiration from examples (which is fine)
+- For this reason you will want to familiarize yourself with the available properties via a reference like [Mozilla's CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- Be aware there are __many__ properties, you won't be able to learn them all, and you will almost certainly end up taking inspiration from examples (which is fine, though attribute if you take someone else's style)
 
 ---
 
@@ -64,23 +62,25 @@ As previously stated, it's generally a good idea to attach `id` and/or `class` a
 
 ```html
 <!DOCTYPE html>
-
 <html>
-
 <head>
-  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <title>Chess-a-likes</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
-  <h1 id="main-title">Krazy Kat Fan Page</h1>
-  <p id="intro-text">Welcome to my Krazy Kat Fan Page</p>
-  <h2 id="love">Things I love about Krazy Kat</h2>
-  <ul>
-    <li class="krazy-list">He's so funny</li>
-    <li class="krazy-list">Ignatz</li>
-  </ul>
+  <div id="wrapper">
+    <h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
+    <div id="introduction">
+      <p id="introduction-text" class="introduction-paragraph">
+        Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
+      </p>
+    </div>
+    <div id="images">
+      <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
+      <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
+    </div>
+  </div>
 </body>
-
 </html>
 ```
 
@@ -90,33 +90,34 @@ Try looking at this page without any CSS...
 
 ---
 
-## CSS
+## More involved CSS
 
 ```css
 body {
+  font-family: Times, serif;
   width: 600px;
   margin: 0 auto;
-  font-family: Times, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, sans-serif;
-}
-
-#main-title {
-  color: rgb(100,100,100);
-}
-
-#intro-text {
+  color: rgb(50,50,50);
   text-align: center;
 }
 
-#love {
-  color: pink;
+a:hover {
+  background-color: yellow;
 }
 
-.krazy-list {
-  text-decoration: underline;
+#wrapper {
+  background-color: rgb(200,200,200);
+  padding: 20px;
+}
+
+.game-icon {
+  padding: 10px;
+  max-width: 100px;
+  transform: rotate(10deg);
 }
 ```
 
@@ -127,10 +128,10 @@ h1, h2, h3, h4, h5, h6 {
 - So, CSS is a whole thing
 - The key is to remember it's there to style your content
 - There are many resources to learn more, such as
-  - Reference lists like the [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-  - Tutorials like the [freeCodeCamp CSS lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)
-  - Googling specific property names or questions and reading the documentation
-  - Using your browser's "Inspector" option to look at the CSS of pages you're browsing
+- Reference lists like the [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- Tutorials like the [freeCodeCamp CSS lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)
+- Googling specific property names or questions and reading the documentation
+- Using your browser's "Inspector" option to look at the CSS of pages you're browsing
 
 ---
 
