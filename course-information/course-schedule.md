@@ -5,7 +5,7 @@
 
 ## Contents
 
-- [Week 1](#week-1) - JavaScript review
+- ~~[Week 1](#week-1) - JavaScript review~~
 - [Week 2](#week-2) - HTML, CSS, and the DOM
 - [Week 3](#week-3) - jQuery
 - [Week 4](#week-4) - jQuery UI
