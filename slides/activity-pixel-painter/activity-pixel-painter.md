@@ -1,4 +1,4 @@
-# Activity: Pixel Painter
+# Activity: Pixel Painter {
 
 ---
 

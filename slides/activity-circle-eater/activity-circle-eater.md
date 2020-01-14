@@ -1,4 +1,4 @@
-# Activity: Circle Eater
+# Activity: Circle Eater {
 
 ---
 

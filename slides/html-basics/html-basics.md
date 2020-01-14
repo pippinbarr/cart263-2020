@@ -1,4 +1,4 @@
-# HTML Basics
+# HTML Basics {
 
 ---
 
@@ -20,15 +20,18 @@
 <head>
   <title>Chess-a-likes</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/script.js"></script>
 </head>
 <body>
   <h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
   <div id="introduction">
+    <h2 id="introduction-heading">Feeling the love</h2>
     <p id="introduction-text" class="introduction-paragraph">
       Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
     </p>
   </div>
   <div id="images">
+    <h2 id="images-heading">Game images</h2>
     <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
     <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
   </div>
@@ -46,6 +49,7 @@
 - The `<head>` tag surrounds information __about__ the page that won't actually be displayed on the page
 - Such as the `<title>` tag which sets the title displayed by the browser (and bookmarks)
 - And the `<link>` tag we can use to point to a CSS file that will style the page visually
+- And the `<script>` tag we use to point to JavaScript files to be included and run on this page
 - The `<body>` tag surrounds the actual content to be displayed on the page itself
 - The `<h1>` tag denotes a first (top) level heading
 - The `<div>` tag surrounds related content
@@ -71,9 +75,11 @@
 - It's kind of like an imaginary box
 
 ```html
+<h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
 <div id="introduction">
-  <p id="introduction-text">
-    Pippin Barr loves making <a href="https://www.pippinbarr.com/category/games/">games</a> based on chess.
+  <h2 id="introduction-heading">Feeling the love</h2>
+  <p id="introduction-text" class="introduction-paragraph">
+    Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
   </p>
 </div>
 ```
@@ -99,21 +105,15 @@
 - In terms of the actual texts being displayed, we might often think in terms of headings and paragraphs
 - `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` represent diminishing headings
 - We use `<p>` to surround paragraphs of text
-- We can also use `<br />` to indicate a single line break
 
 ```html
-<h1>Big idea!</h1>
-
-<h2>Part one of the big idea</h2>
-<p>
-  Here are some ideas about this part of the big idea.
-</p>
-<h2>Part two of the big idea</h2>
-<p>
-  Here are some ideas about this part of the
-  <br />
-  big idea.
-</p>
+<h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
+<div id="introduction">
+  <h2 id="introduction-heading">Feeling the love</h2>
+  <p id="introduction-text" class="introduction-paragraph">
+    Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
+  </p>
+</div>
 ```
 
 ---
@@ -125,11 +125,9 @@
 - We use the `<a>` tag to represent text that is a link
 
 ```html
-<div id="introduction">
-  <p id="introduction-text">
-    Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
-  </p>
-</div>
+<p id="introduction-text" class="introduction-paragraph">
+  Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
+</p>
 ```
 
 - The `href` attribute in the `<a>` tag provides the destination of the link
@@ -142,6 +140,7 @@
 
 ```html
 <div id="images">
+  <h2 id="images-heading">Game images</h2>
   <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
   <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
 </div>
@@ -161,6 +160,7 @@
 
 ```html
 <div id="images">
+  <h2 id="images-heading">Game images</h2>
   <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
   <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
 </div>
@@ -175,10 +175,10 @@
 - HTML is a whole thing
 - The key is to remember it's there to structure your content (not style it)
 - There are many resources to learn more, such as
-- Reference lists like the [W3 Schools HTML Reference](https://www.w3schools.com/tags/ref_byfunc.asp)
-- Tutorials like the [freeCodeCamp HTML lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
-- Googling specific tag names or questions and reading the documentation
-- Using your browser's "View Source" option to look at the HTML of pages you're browsing
+  - Reference lists like the [W3 Schools HTML Reference](https://www.w3schools.com/tags/ref_byfunc.asp)
+  - Tutorials like the [freeCodeCamp HTML lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
+  - Googling specific tag names or questions and reading the documentation
+  - Using your browser's "View Source" option to look at the HTML of pages you're browsing
 
 ---
 

@@ -1,11 +1,11 @@
-# DOM Basics
+# DOM Basics {
 
 ---
 
 ## DOM
 
 - Stands for __Document Object Model__
-- It is a representation of the __currently loaded webpage__ along with special functions (an API) that we can access in __JavaScript__ through the `document` object
+- It is a representation of the __currently loaded webpage__ along with special functions and properties (an API) that we can access in __JavaScript__ through the `document` object
 - Has the exact same __structure__ as the HTML on the page
 - Allows us to dynamically add, remove, examine, and change elements on a webpage through code
 - Includes the ability to manipulate CSS and event handlers
@@ -14,7 +14,7 @@
 
 ## Waiting for the page to load
 
-- When we're writing code that accesses the DOM, the need to delay it until the page has loaded
+- When we're writing code that accesses the DOM, we need to delay it until the page has loaded
 - For this we can add a function as a callback for `window.onload`, which will be called only when the page has loaded
 
 ```javascript
@@ -27,7 +27,7 @@ function setup() {
 ```
 
 - This template, of writing your code in a function assigned to `window.onload` is a typical pattern for doing DOM-based JavaScript
-- (I'm calling our function `setup()` for it's familiarity in the context of p5 - it runs __once__ when the page loads.)
+- (I'm calling our function `setup()` for its familiarity in the context of p5 - it runs __once__ when the page loads.)
 
 ???
 
@@ -58,7 +58,7 @@ function setup() {
 }
 ```
 
-- The above will let us see the entire content of the current webpage in the console
+- The above will let us see the entire content of the current webpage in the console (including the various functions and properties associated with its representation in JavaScript)
 
 ---
 
@@ -80,16 +80,17 @@ console.log(mainHeading);
 ## More selection
 
 - There are a number of other ways to select elements on a page relative to a specific element in its hierarchy, including
-- `getElementsByClassName()`
-- `getElementsByTagName()`
-- `querySelector()`
+  - `getElementsByClassName()`
+  - `getElementsByTagName()`
+  - `querySelector()` and `querySelectorAll()`
 - Note that these functions can be applied to __any__ element of the document (since it's a hierarchy)
 
 ---
 
 ## `getElementsByClassName()`
 
-- Again a pretty self-explanatory name, `getElementsByClassName()` returns __all__ the elements with the specified `class` attribute (in what is effectively an array) that are children of the element it's called on
+- Again a pretty self-explanatory name, `getElementsByClassName()` returns __all__ the elements with the specified `class` attribute that are children of the element it's called on
+- It returns what is __effectively__ an array (you can use array indexes with it and it has a `.length` property), but isn't really
 
 ```javascript
 let imagesDiv = document.getElementById('images');
@@ -150,7 +151,7 @@ for (let i = 0; i < introLinks.length; i++) {
 ## `style`
 
 - One of the key things we often want to do within the DOM of our page is manipulate the CSS of a selected element for visual effect
-- We can do this via the element's `style` property, which provides access to all the CSS properties of the element
+- We can do this via the element's `style` property, which provides access to the style __attribute__ of the element (not the style file!)
 - Note that the properties are written in camelCase rather than the CSS syntax which uses lowercase words separated by hyphens (`backgroundColor` rather than `background-color`)
 
 ```javascript
@@ -160,6 +161,10 @@ heading.style.backgroundColor = 'black';
 ```
 
 - When in doubt, consult a [DOM CSS Properties Reference](https://www.w3schools.com/jsref/dom_obj_style.asp)
+
+???
+
+- In order to access the reset of the style settings of an element (such as those in a `<style>` tag or in a `.css` file, we need to use something like `getComputedStyle()` for the element. Look it up.)
 
 ---
 
@@ -202,6 +207,7 @@ setInterval(enlargePage,2000);
 ...
 
 function enlargePage() {
+  // Get the style properties of the body with window.getComputedStyle()
   let style = window.getComputedStyle(document.body);
   let currentSize = parseFloat(style.fontSize);
   currentSize += 5;
@@ -209,7 +215,13 @@ function enlargePage() {
 }
 ```
 
+- Clearly this is a way to do animation! (But if you really want to animate, look at `window.requestAnimationFrame()` instead.)
+
+???
+
 - Note that `window.getComputedStyle()` returns the CSS properties for the specified element
+- `window.getComputedStyle()` does have limitations, most notably that it uses default units when computing the style on the page, so even if you specified a font size in `em` units, for example, it will return the font size in `px`
+- This is a big rabbit hole that you can go down if you want to! (This is also why things like jQuery exist.)
 
 ---
 

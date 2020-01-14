@@ -54,6 +54,7 @@
 # HTML, CSS, and the DOM
 
 ## Frontmatter
+- [Git Cheatsheet](../cheatsheets/git.md)
 - Download the [Empty Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip) to follow along
 
 ## Topics
