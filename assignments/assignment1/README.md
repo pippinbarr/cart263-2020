@@ -37,7 +37,7 @@ __Optional__ challenge:
 
 You will submit this exercise as a __comment__ on an __Issue__ on the course repository here:
 
-https://github.com/pippinbarr/cart253-2020/issues
+https://github.com/pippinbarr/cart263-2020/issues
 
 (Click on the Issue with the name of the exercise and your section letter and follow the instructions.)
 
