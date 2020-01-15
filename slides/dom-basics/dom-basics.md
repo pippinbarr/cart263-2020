@@ -395,10 +395,10 @@ imagesDiv.appendChild(newImage);
 
 ```javascript
 let heading = document.getElementById('main-heading'); // The element to remove
-heading.parent.removeChild(heading); // Removing the child
+heading.parentElement.removeChild(heading); // Removing the child
 ```
 
-- Usefully, all elements have a `.parent` property that specified their parent element in the hierarchy
+- Usefully, all elements have a `.parentElement` property that specifies their parent element in the hierarchy
 
 ---
 

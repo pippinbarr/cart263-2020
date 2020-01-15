@@ -145,11 +145,6 @@ a:hover {
   background-color: yellow;
 }
 
-#wrapper {
-  background-color: rgb(200,200,200);
-  padding: 20px;
-}
-
 .game-icon {
   padding: 10px;
   max-width: 100px;
