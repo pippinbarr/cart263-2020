@@ -26,9 +26,9 @@ __Do not download a p5 template__, it will only confuse matters.
 
 In the `style.css` file, create a `pixel` class selector and give it the following properties:
 
-1. Background color of black (or any other color you like)
-1. Width and height of 30 pixels (or whatever size you like)
-1. Make it float to the left (or make it display as inline block)
+1. __Background color__ of black (to set the default color of a pixel)
+1. Width and height of 30 pixels (to set the size of a single pixel)
+1. Make it float to the left or make it display as inline block (this is to display all pixels continuously instead of one per line)
 
 To test this, add a div with class `pixel` to your `index.html`. You should see a square the size and color you specified in your CSS.
 
@@ -50,7 +50,7 @@ To test this, add a div with class `pixel` to your `index.html`. You should see 
 1. Define an empty function called `setup`
 1. set the `window`'s `onload` callback to be `setup`
 
-To test this, add a `console.log()` statement (with some text to print) into the `setup` function. You should see your text appear when you load the page.
+To test this, add a `console.log()` statement (whatever text you like) into the `setup` function. You should see your text appear when you load the page.
 
 ???
 
@@ -58,7 +58,7 @@ To test this, add a `console.log()` statement (with some text to print) into the
 window.onload = setup;
 
 function setup() {
-  console.log("Testing, testing, 1 2 3...")
+  console.log("setup()")
 }
 ```
 
@@ -68,9 +68,9 @@ function setup() {
 
 In the `setup` function, dynamically add your pixels to the page by using a `for` loop that counts from `0` to `1000`. Inside the loop:
 
-1. Use the `document.createElement()` function to create a new `div` and store it in a variable called `pixel`
-1. Add the `pixel` class to the new element using the `setAttribute()` function
-1. Add the new element to the page's `body` (`document.body`) using the `appendChild()` function
+1. Use the `document.createElement()` function to create a new `div` and store the result in a variable called `pixel`
+1. Add a `class` attribute of `pixel` to the new element using the `setAttribute()` function (to assign it the correct CSS styling)
+1. Add the new element to the page's `body` (accessible via `document.body`) using the body's `appendChild()` function
 
 You should now see 1000 of your pixel divs appear on the page when you load it!
 
@@ -89,7 +89,7 @@ function setup() {
 ---
 
 ## 5. Mouseover
-In `setup()` add a `mouseover` event listener to each pixel element with `addEventListener()`. It should provide a function (which we will define in a moment) called `paint`.
+In the for loop in `setup()` add a `mouseover` event listener to each pixel element with `addEventListener()` after it is created. It should specify a function (which we will define in a moment) called `paint`.
 
 We won't see anything special happen after this step, because the `paint()` function doesn't exist yet!
 
@@ -110,10 +110,10 @@ function setup() {
 
 ## 6. Painting
 
-Define a function called `paint()` with one parameter called `e` (for event) to change the color of a pixel. In the function:
+Define the function called `paint` __after__ `setup` with one parameter called `e` (for event) to change the color of a pixel. In the function:
 
 1. Create a new variable called `pixel` and store `e.target` in it (remember that `e.target` in an event handler like this one will have the element targeted by the event in it, i.e. the pixel on the page that was moused over)
-1. Set the pixel's background color to white. (Remember you need to access the `style` property of the pixel, and the `backgroundColor` property of the `style`. Remember you need to set the color using a string.)
+1. Set the pixel's background color to white. (Remember you need to access the `style` property of the pixel, and the `backgroundColor` property of the `style`. Remember you need to set the color using a string like `'white'`.)
 
 After this step, you should be able to move the mouse over the pixels on the page and see them change from black to white!
 
@@ -130,11 +130,14 @@ function paint(e) {
 
 ## 7. Reverting the pixel color
 
-We want the pixel to change back to black, so define a function called `resetPixel()` that takes a parameter called `pixel`. It should:
+We want the pixel to change Back to Black, so define a function called `resetPixel` that takes a parameter called `pixel`. It should:
 
-1. Set the background color of the provided `pixel` parameter back to black.
+1. Set the background color of the provided `pixel` parameter to black.
 
-Add a `setTimeout()` function to the end of your `paint()` function that calls the `resetPixel` function after a delay of `1000` milliseconds. After the delay parameter, add `pixel` as the third parameter so that the correct pixel to reset is passed to `resetPixel()`
+To call this function after a delay, add a `setTimeout()` function to the end of your `paint()` function that calls the `resetPixel` function after a delay of `1000` milliseconds. It should have three parameters:
+  1. The function to call (`resetPixel`)
+  2. The length of delay (try `1000` or larger)
+  3. The pixel to reset (`pixel`, the pixel that was just set to white)
 
 After this step, you should have a working paint program! Enjoy!
 
