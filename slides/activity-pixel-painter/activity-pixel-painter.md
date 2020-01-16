@@ -18,6 +18,8 @@ The overall effect will be of "painting" the page with the mouse, and then havin
 
 Go to the course website and download the [template empty project](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip) then open the project in Atom.
 
+__Do not download a p5 template__, it will only confuse matters.
+
 ---
 
 ## 2. Create the "pixel" CSS
