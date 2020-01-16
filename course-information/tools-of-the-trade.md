@@ -5,7 +5,7 @@ This page provides a review of the core software used in this course, along with
 ## Browser
 
 As we are doing web development we will need a __web browser__. In this course we recommend using either
-__Chrome__ or __Firefox__, both free, popular browsers. The most important element of the browser you use it having access to the __JavaScript Console__. In Chrome it is accessed via `View > Developer > JavaScript Console`. In Firefox it is accessed via `Tools > Web Developer > Web Console`.
+__Chrome__, __Firefox__, and __Opera__ are all free, popular browsers. The most important element of the browser you use it having access to the __JavaScript Console__. In Chrome it is accessed via `View > Developer > JavaScript Console`. In Firefox it is accessed via `Tools > Web Developer > Web Console`.
 
 #### Installing Chrome
 
@@ -15,6 +15,9 @@ Go to [https://www.google.ca/chrome](https://www.google.ca/chrome) and follow th
 
 Go to [https://www.mozilla.org/firefox/][https://www.mozilla.org/en-CA/firefox/] and follow the instructions.
 
+#### Installing Opera
+
+Go to [https://www.opera.com/][https://www.opera.com/] and follow the instructions.
 
 ## Text editor
 
@@ -29,7 +32,11 @@ Atom is already installed on CDA machines. Otherwise: go to https://atom.io/ and
 One great thing about Atom is that it's extensible using __packages__. You can explore the packages yourselves and install the things you like, but two very helpful packages are:
 
 - atom-live-server (already installed on CDA machines)
-- prettier-atom
+- prettier-atom (automatic code formatting with [prettier](https://prettier.io/))
+
+See also packages such as
+
+- [emmet](https://emmet.io/) (a package to improve your workflow in HTML/CSS)
 
 #### Installing Atom packages
 
