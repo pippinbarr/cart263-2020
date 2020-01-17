@@ -366,6 +366,40 @@ function enlargeElement(e) {
 
 ---
 
+## Changing the content of elements
+
+- Many HTML elements can contain text (think of `p`, `h1`, `em` and other tags)
+- One thing that can be useful is to alter that text from within JavaScript
+- This might most obviously be used to dynamically generate content on a webpage or to display "live" information
+
+---
+
+## .innerText
+
+- If all we want to do is change the raw text inside an element, we can use its `.innerText` property
+
+```javascript
+let heading = document.getElementById('main-heading');
+heading.innerText = "This is not my beautiful house";
+```
+
+- After the above code executes, the heading's text will be changed to the new string specified
+
+---
+
+## .innerHTML
+
+- Sometimes we might want to be able to use HTML tags in the text we insert into an element's contents, in which case we use its `.innerHTML` property
+
+```javascript
+let heading = document.getElementById('main-heading');
+heading.innerHTML = "This is <strong>not</strong> my beautiful house";
+```
+
+- Here we can use the `strong` tag inside the string because we're injecting it into the element specifically as HTML content
+
+---
+
 ## Creating and adding elements
 
 - We can add new elements to a page dynamically using a set of functions
