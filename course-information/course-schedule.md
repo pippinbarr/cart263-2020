@@ -6,7 +6,7 @@
 ## Contents
 
 - ~~[Week 1](#week-1) - JavaScript review~~
-- [Week 2](#week-2) - HTML, CSS, and the DOM
+- ~~[Week 2](#week-2) - HTML, CSS, and the DOM~~
 - [Week 3](#week-3) - jQuery
 - [Week 4](#week-4) - jQuery UI
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]
@@ -50,8 +50,8 @@
 
 ---
 
-# Week 2
-# HTML, CSS, and the DOM
+# ~~Week 2~~
+# ~~HTML, CSS, and the DOM~~
 
 ## Frontmatter
 - [Git Cheatsheet](../cheatsheets/git.md)
@@ -90,7 +90,7 @@
 - [__Assignment 1__](../assignments/assignment1/README.md)
 
 ## Homework
-- [__Assignment 2__](../assignments/assignment2/README.md)
+- [__Assignment 2__](../assignments/assignment2/README.md) __NOTE: Small grading approach adjustment__
 - [__Project 1__](../projects/project1/README.md)
 
 ---
