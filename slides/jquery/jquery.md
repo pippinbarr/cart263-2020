@@ -1,91 +1,12 @@
-# jQuery
+# jQuery {
 
 ---
 
 ## Contents
 
-- JavaScript and the DOM
-- jQuery
+- jQuery in general
 - Selection and action
 - Event handlers
-
----
-
-## JavaScript and the DOM
-
-- A major use of JavaScript in the context of the web is working with the DOM (Document Object Model)
-- The DOM is a representation of the currently loaded webpage in terms of its elements and their content
-- In JavaScript we have access to a variable called `document` which contains an object representing the DOM for the current page
-- `document` also give us access to a number of functions for retrieving specific elements and manipulating them
-
----
-
-## A webpage
-
-```css
-body {
-  margin: 50px;
-  font-family: sans-serif;
-  font-size: 1.5em;
-}
-
-div {
-  color: #4455aa;
-  margin-top: 20px;
-}
-
-#greeting {
-  color: #aabb00;
-}
-```
-
-```html
-<h1>Welcome to my homepage!</h1>
-<div id="greeting">
-  I'm so <span id="reaction">pleased</span> to see you!
-</div>
-<div>
-  Want to know something? <a href="http://www.google.com">Google</a> it! Ha ha ha!
-</div>
-```
-
----
-
-## Manipulating the page via the DOM
-
-```javascript
-"use strict";
-
-window.onload = setup;
-
-function setup() {
-  let reaction = document.getElementById("reaction");
-  reaction.innerText = "surprised";
-
-  let divs = document.getElementsByTagName("div");
-  for (let i = 0; i < divs.length; i++) {
-    divs[i].style.color = '#ff0000';
-  }
-
-  reaction.addEventListener('click',reactionClicked);
-}
-
-function reactionClicked(e) {
-  e.target.innerText = "depressed";
-}
-```
-
-- So, we can access and manipulate elements on a webpage via "pure" JavaScript
-
-???
-
-- This is just a small example to show the basic premise of retrieving elements on a page and manipulating them in some way, as well as listening to events
-- It does contain a bunch of the key elements here, notably:
-  - Setting up code to run once the page has loaded
-  - Accessing specific elements on the page (by id, by tag name)
-  - Changing the content of elements on the page (via innerText)
-  - Adding an event listener to an element (with addEventListener)
-  - Writing event handler functions (like reactionClicked) that deal with the specific element targeted (via e.target)
 
 ---
 
@@ -125,7 +46,7 @@ function reactionClicked(e) {
 
 - At this point we would want to know more about how the library works and we tend to have a couple of options at the homepage
   - _Tutorials_ (such as in the [jQuery Learning Center](https://learn.jquery.com/))
-  - _Examples_ (such as in the [jQuery API Documentation](https://api.jquery.com/))
+  - _Documentation and Examples_ (such as in the [jQuery API Documentation](https://api.jquery.com/))
 - In our case we'll cover a brief ad hoc introduction with these slides
 - But be aware of and return to the above two options as well
 
@@ -133,11 +54,11 @@ function reactionClicked(e) {
 
 ## Obtaining the jQuery library
 
-- In order to actually try jQuery out, we need to have the library in our own setup
-- On the homepage we see the option to download jQuery, but, if we read that download page more carefully we'll realise there are two options:
+- In order to actually try jQuery out, we need to have the library in a project
+- On the homepage we see the option to download jQuery, but, if we read that download page more carefully we'll realize there are __two__ options:
   1. We can download jQuery as a JavaScript file and include it in our project in the typical way
   1. We can use a CDN (Content Delivery Network) version of the library that is hosted online
-- If we download the file, we force our users to download jQuery when they access our webpage, but we will be able to develop offline.
+- If we download the file, we force our users to download jQuery when they access our webpage, but we will be able to work offline.
 - If we use the CDN, we take advantage of caching, but if we don't have access to the internet, we can't work on our project
 - Many of the very popular libraries around are available via a CDN
 
@@ -145,14 +66,16 @@ function reactionClicked(e) {
 
 ## The CDN option
 
-- For now, we will use the CDN version
-- So, set up a basic project template (probably by downloading the one from the course repository)
-- And add the following script tag to our project's `index.html`:
+- For now, we will use the CDN approach
+- So, set up a basic [empty project template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip) (probably by downloading the one from the course repository linked here)
+- And add the script tag from the [jQuery CDN](https://code.jquery.com/) to our project's `index.html` (most often you'll use the __minified__ version)
+
+--
 
 ```html
 <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 ```
 
@@ -189,9 +112,9 @@ div {
 
 ---
 
-## Document Ready
+## "Document Ready"
 
-- A key concept when working with HTML/CSS via JavaScript is that we need to make sure the page has __loaded__ before we start trying to access elements on it
+- As we know, a key concept when working with HTML/CSS via JavaScript is that we need to make sure the page has __loaded__ before we start trying to access elements on it
 - One way to do this is to add our script tag at the __bottom__ of our `.html` file
 - Another way is to rely on JavaScript that only runs when the document is ready to be manipulated, the jQuery version of this leads to programs written this way (in our `script.js`):
 
@@ -215,7 +138,6 @@ function setup() {
 ## Anonymous functions
 
 - In fact, a huge amount of the time in JavaScript when people are defining functions to be used as event handlers (like for "document ready") they use __anonymous functions__
-- That is, they __define__ the function right in the place where you're supposed to put the event handler as a parameter:
 
 ```javascript
 $(document).ready(function () {
@@ -223,8 +145,7 @@ $(document).ready(function () {
 });
 ```
 
-- This is one of those things that can be alarming syntactically when you're first encountering it
-- But it's definitely something you will see __a lot__ online, so it's well worth getting used to
+- It's definitely something you will see __a lot__ online, so it's well worth getting used to
 
 ???
 
@@ -232,14 +153,14 @@ $(document).ready(function () {
 - Really we're just putting the definition of the function where previously we would have put the name of the function
 - It means we've got one less step of indirection (going from the name to find the function code to run)
 - At the expensive of somewhat weirder-looking syntax, with the function definition nested inside the parameters of another function
-- You get used to it.
+- You do get used to it.
 
 ---
 
 ## Selection and action
 
 - At the heart of programming with jQuery is the concept of __selection__
-- Most jQuery code begins by __selecting__ one or more elements of a page and then applying some __action__ (i.e. a function) to them (even the "document ready" structure is __selecting__ the document object for instance)
+- Most jQuery code begins by __selecting__ one or more elements on a page and then applying some __action__ (i.e. a function) to them (even the "document ready" structure is __selecting__ the document for instance)
 - For example, if we want to fade in the `div` tags in our sample webpage we might write
 
 ```javascript
@@ -262,11 +183,12 @@ function setup() {
 let $divs = $('div');
 ```
 
-- When we use jQuery we'll see the dollar sign a lot, it's the name of the main jQuery function used for selection
+- When we use jQuery we'll see the dollar sign a lot. Like, a __LOT__.
+- It's the name of the main jQuery function
 - So `$('div')` means "select all the `div` elements on the page"
-- The result the function returns is a special __object__ created by jQuery
-- We can store the result of this selection in a variable (note it is common practice to name variables that will store jQuery objects with a leading `$`)
-- The resulting selection has lots of special functions we can call on it with dot notation...
+- The result the function returns is an __object__ created by jQuery
+- We can store the result of this selection in a variable, and when we do it is common practice to name the variable with a leading `$` (to signify it's a jQuery object)
+- The resulting selection object has lots of special functions we can call on it with dot notation...
 
 ---
 
@@ -279,7 +201,7 @@ $divs.hide();
 
 - One of the special functions the jQuery object allows is `hide()`
 - As you might expect, it hides the specified elements on the page (which we selected using the jQuery `$` function)
-- In effect it manipulates their CSS styling to set `display: none`
+- Behind the scenes, it manipulates their CSS styling to set `display: none`
 
 ---
 
@@ -293,12 +215,12 @@ $divs.fadeIn(2000);
 
 - The `fadeIn()` function from jQuery does what you might expect
 - It fades the specified elements in over the specified amount of time
-- (The elements have to be hidden first or they can't be faded in of course!)
+- (The elements have to be hidden first or they can't be faded in)
+- Why is there a slight flicker at page load?
 
 ???
 
-- Note how you see a flicker of the `div` elements just when the page loads?
-- That's because the page loads and renders for one frame before jQuery's `hide()` function is applied to the elements
+- The flicker happens because the page loads and renders for one frame before jQuery's `hide()` function is applied to the elements
 - If we wanted them to be hidden from the beginning we should set `display: none;` in their CSS
 - If we do that, we don't need the `.hide()` because they'll already be hidden!
 
@@ -306,11 +228,11 @@ $divs.fadeIn(2000);
 
 ## Selection and action in one
 
-- In fact, we don't have to put a selection into a variable first, we can act directly on the selection while selecting it
+- In fact, we don't have to put a selection into a variable first, we can act directly on the selection right after selecting it
 
 ```javascript
-$('div').hide();
-$('div').fadeIn(2000);
+$('div').hide(); // Select all divs AND THEN hide them
+$('div').fadeIn(2000); // Select all divs AND THEN fade them in
 ```
 
 - Since the selection __returns__ the jQuery object, we can use it right away!
@@ -319,13 +241,13 @@ $('div').fadeIn(2000);
 
 ## Chaining effects
 
-- Also in fact, we can __chain__ these functions together, because jQuery actions __return__ the selection they just worked on, meaning you can add another action to that same selection!
+- Also in fact, we can __chain__ these functions together, because more or less all jQuery actions __return__ the selection they just worked on, meaning you can add another action to that same selection!
 
 ```javascript
-$('div').hide().fadeIn(2000);
+$('div').hide().fadeIn(2000); // Select all divs THEN hide them THEN fade them in
 ```
 
-- You can even write them on separate lines if that looks clearer to you
+- You can even write them on separate lines for clarity (many people do it this way)
 
 ```javascript
 $('div')
@@ -337,14 +259,50 @@ $('div')
 
 ---
 
+## A quick mention of the `css()` function
+
+- Just because it is specifically very useful, note that jQuery has a `css()` function that lets you set CSS properties, e.g.
+
+```javascript
+$('div').css('color','red'); // Set text in all divs to have red text
+```
+
+- Importantly you can set __multiple__ CSS properties by providing an object instead of strings:
+
+```javascript
+$('div').css({
+  color: 'red',
+  backgroundColor: 'green',
+  fontSize: '2em'
+});
+```
+
+- Note that the CSS property names are the same as when using the DOM: they use camelCase
+
+???
+
+- If you wanted to, you could do the above in two steps by using a variable, but it's not very common:
+
+```javascript
+let newCSS = {
+  color: 'red',
+  backgroundColor: 'green',
+  fontSize: '2em'
+};
+$('div').css(newCSS);
+```
+
+---
+
 ## What kinds of actions are there?
 
 - There are many kinds of jQuery actions we can apply to elements on the page
-- This is where you need to make friends with the documentation of the [jQuery API](http://api.jquery.com/)
+- There are certainly more than we can enumerate here
+- This is where we need to make friends with the documentation of the [jQuery API](http://api.jquery.com/)
 - In fact it's important to explore it and see what's there, rather than searching for something specific
-- Of particular note are actions that work with CSS, attributes, and effects
+- Often particularly fun are actions that work with CSS (like `css()`), attributes (`attr()` is important), effects (like `fadeIn()` and `fadeOut()` and more), and textual content (such as `text()` and `html()`)
 
-__Let's look at the API entry for `fadeIn()`__
+__Let's look at the API for a bit and see what we see?__
 
 ---
 
@@ -358,7 +316,7 @@ __Let's look at the API entry for `fadeIn()`__
 $('div').not('.spooky')
 ```
 
-or
+or (perhaps more weird-looking)
 
 ```javascript
 $('div:not(.spooky)')
@@ -368,19 +326,19 @@ $('div:not(.spooky)')
 
 ## Event handlers
 
-- Moving quickly along, the other major aspect of jQuery is handling events that occur on the page
+- Moving along, the other major aspect of jQuery is handling events that occur on the page
 - This includes reacting to user input like mouse movements and clicks, key presses, browser events, and so on
 - We use the `on()` function in jQuery to handle specific events on specific elements
 
 ```javascript
-$('div').on('click',divClicked);
+$('div').on('click',divClicked); // Add a click listener to ever div
 
 function divClicked() {
-  $(this).fadeOut();
+  $(this).fadeOut(); // Tell the div cliked to fade out
 }
 ```
 
-- Note that `$(this)` used inside an event handler selects the element the event occurred on! (The one that was clicked, here.)
+- Note that `$(this)` used inside an event handler selects the element the event occurred on! The one that was clicked in the above case. Very handy!
 
 ???
 
@@ -445,6 +403,9 @@ $('div').on('click',function () {
 });
 ```
 
+- Perhaps a good example of why __not__ to use nested anonymous functions?
+- This is arguably __significantly__ less readable than the version on the previous slide
+
 ---
 
 ## jQuery!
@@ -459,11 +420,12 @@ $('div').on('click',function () {
 
 - jQuery can do more than hide and fade elements in and out
 - And it can handle more diverse events than just mouse clicks
-- It can do so much more it's pointless contemplating explaining it all here
+- It can do so much more it's impossible to explain it all here
 - Rather, we need to be able to engage with
   - the [jQuery Learning Center](https://learn.jquery.com)
   - the [jQuery API](http://api.jquery.com/) (Application Programming Interface)
   - the magic of [using Google](https://www.google.ca/) to ask technical questions about what you want to do
+  - The [External Resources](https://github.com/pippinbarr/cart263-2020/blob/master/course-information/external-resources.md#jquery) on the course hompage
   - the many, many other tutorials and resources online, e.g. [Google "jquery tutorial"](https://www.google.com/search?q=jquery+tutorial)
 
 ---

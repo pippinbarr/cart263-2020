@@ -24,6 +24,7 @@ $(document).ready(function() {
   // trigger div.
 
   $trigger = $('#trigger');
+  console.log($trigger)
   $reload = $('#reload');
 
   // Listen to clicks on the trigger
