@@ -48,6 +48,8 @@ For each step you take, commit your code with a descriptive message and the assi
 
 __NOTE:__ This brief is the bare minimum of additions in order to pass, please always use these assignments as a playground to try out more than just this!
 
+__Additional challenge:__: Add an "ending" to the experience by indicating (however you wish) that the user has failed if all the redacted passages are revealed, and do not allow them to continue the experience if this happens.
+
 ## Submission
 
 You will submit this exercise as a __comment__ on an __Issue__ on the course repository here:
