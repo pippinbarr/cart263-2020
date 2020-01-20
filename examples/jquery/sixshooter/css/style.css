@@ -1,7 +1,7 @@
 /*
 
-DART450
 Six Shooter
+Pippin Barr
 
 */
 
@@ -25,7 +25,7 @@ body {
 }
 
 .fire {
-	left: 2000px;
+	left: 100vw;
 }
 
 #trigger {
@@ -34,7 +34,7 @@ body {
 
 .dry-fire {
 	color: #666 !important;
-	font-weight:lighter;
+	font-weight: lighter;
 	font-style: italic;
 }
 
