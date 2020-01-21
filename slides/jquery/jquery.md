@@ -302,7 +302,24 @@ $('div').css(newCSS);
 - In fact it's important to explore it and see what's there, rather than searching for something specific
 - Often particularly fun are actions that work with CSS (like `css()`), attributes (`attr()` is important), effects (like `fadeIn()` and `fadeOut()` and more), and textual content (such as `text()` and `html()`)
 
-__Let's look at the API for a bit and see what we see?__
+---
+
+## Reading an API
+
+Look at the [API entry for `slideToggle()`](https://api.jquery.com/slideToggle/).
+
+- The __basic description__ at the top gives you the basic idea
+- There are __three__ ways to call the function, two with "normal" parameters like "duration", "easing", and a "complete" callback, and one with an object containing properties and values that specify options
+- The __object version__ of the function allows you to access __many more options__
+- Each parameter (or option) is explained with its name, default value, type, and a description
+- When a parameter to a function is listed in __square brackets__, it means the parameter is __optional__ (and that there will be some default setting)
+- Note the __examples__ toward the bottom that illustrate the use of the function
+
+???
+
+- That is, there is a __lot__ of information for __every__ function you could possibly want to use.
+- A big part of the trick of using a new API is just being able to deal with reading the documentation
+- And being able to imagine new and interesting ways of using the functions that aren't just repetitions of the example code
 
 ---
 
@@ -338,9 +355,11 @@ function divClicked() {
 }
 ```
 
-- Note that `$(this)` used inside an event handler selects the element the event occurred on! The one that was clicked in the above case. Very handy!
+- Note that `$(this)` used inside an event handler selects __the element the event occurred on__! The one that was clicked in the above case. Very handy!
 
 ???
+
+There are many event types listed in the [Events](https://api.jquery.com/category/events/) section of the API (but note this contains "shorthand" even functions, rather than the `on()` based events)
 
 - Notice how the click event now works all __all__ the divs on the page
 - Notice how we used `this` inside the event handler function to specify the __div that is clicked__ rather than all the divs
@@ -377,7 +396,7 @@ $('div').click(function () {
 
 - Many of jQuery's functions perform some kind of action __over time__
 - `fadeOut()` can take an amount of time to complete as an argument, for instance
-- Most of these kinds of functions also allow us to specify a function to call when the effect is completed:
+- Most of these kinds of functions also allow us to specify a function to call when the effect is __completed__:
 
 ```javascript
 $('div').on('click',divClicked);
@@ -387,7 +406,9 @@ function divClicked() {
 }
 
 function fadeComplete() {
-  console.log("Fade out completed!");
+  $('body').css({
+    backgroundColor: 'red'
+  });
 }
 ```
 
