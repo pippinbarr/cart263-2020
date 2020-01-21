@@ -256,7 +256,7 @@ function spanClicked() {
 
 ---
 
-## 10. Efficiency
+## 9. Efficiency
 
 If you're going to be using it repeatedly, it's technically better to __store__ a jQuery selection in a variable to avoid looking it up with jQuery every time. We can do this with all the spans on the page. (Though note this won't work if you're dynamically adding and removing things from the page, as your variable won't stay up to date.)
 
