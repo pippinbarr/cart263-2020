@@ -77,6 +77,9 @@
 # Week 3
 # jQuery
 
+## Frontmatter
+- [__Project 1__](../projects/project1/README.md)
+
 ## Topic
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/jquery/jquery))
 
