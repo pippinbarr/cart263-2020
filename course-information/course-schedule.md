@@ -93,7 +93,7 @@
 - [__Assignment 1__](../assignments/assignment1/README.md)
 
 ## Homework
-- [__Assignment 2__](../assignments/assignment2/README.md) __NOTE: Small grading approach adjustment__
+- [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md) __NOTE: Small grading approach adjustment__
 - [__Project 1__](../projects/project1/README.md)
 
 ---
@@ -114,7 +114,7 @@
 - __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/), [Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
 ## Hand-in
-- [__Assignment 2__](../assignments/assignment2/README.md)
+- [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md)
 
 ## Homework
 - [__Project 1__](../projects/project1/README.md)
