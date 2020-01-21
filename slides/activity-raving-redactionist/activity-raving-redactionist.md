@@ -179,7 +179,7 @@ Now we want to define our `updateSpan()` function so it will randomly change a s
 In your `updateSpan` function:
 1. Generate a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
 1. Check if the random number is less than some probability (e.g. `0.1` for a 10% likelihood)
-1. If it is, remove the `redacted` class from the current span (using `this` as the selector, because `each()` sets `this` to be the current item being processed) __and__
+1. If it is, remove the `redacted` class from the current span (using `this` as the selector, because `each()` sets `this` to be the current item being processed)
 1. Add the `revealed` class to the current span (using `this` as the selector)
 
 (Use the [jQuery API](https://api.jquery.com/) to find how to __add__ a __class__ and how to __remove__ a __class__)
