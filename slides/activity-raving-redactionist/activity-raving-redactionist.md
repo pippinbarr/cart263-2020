@@ -57,7 +57,7 @@ __Solution:__
 ## 3. Set up CSS
 
 1. Style the `body` and `p` tags however you want to create margins, fonts, sizes, etc. that suit you (don't spend much time on this, you can do more later)
-1. Create a `redacted` class that sets the background color to black and the foreground color to transparent (to avoid people seeing the text when they highlight it)
+1. Create a `redacted` class that sets the background color to black and the text color to transparent (to avoid people seeing the text when they highlight it)
 1. Create a `revealed` class that sets the background color to transparent, and the foreground color to red (to induce panic!)
 
 When you view the page now, the text in the redacted spans should be black!
