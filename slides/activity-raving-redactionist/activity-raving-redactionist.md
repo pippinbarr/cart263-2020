@@ -9,7 +9,6 @@ An experience in which:
 - We see a screen of text with some passages "redacted" (covered in black bars)
 - Over time the redactions disappear, revealing the text beneath them
 - The user is in charge of keeping the information secret, so they click the secret text to restore the redaction
-- If all the redacted passages disappear, the user has failed!
 
 ---
 
@@ -60,7 +59,7 @@ __Solution:__
 1. Create a `redacted` class that sets the background color to black and the text color to transparent (to avoid people seeing the text when they highlight it)
 1. Create a `revealed` class that sets the background color to transparent, and the text color to red (to induce panic!)
 
-When you view the page now, the text in the redacted spans should be black!
+When you view the page now, the text you put spans around should be redacted!
 
 ???
 
@@ -89,7 +88,7 @@ body {
 
 ## 4. Start the program
 
-In `script.js` create the basic "document ready" code so that we can start writing our program in jQuery.
+In `script.js` create the basic "document ready" code so that we can start writing our program in jQuery. For now, use the version that called a function called `setup` and define that function. (Put in a `console.log()` if you want to check whether it's working.)
 
 ???
 
@@ -128,7 +127,7 @@ We want the redactions to randomly disappear __over time__, so we'll need a timi
   - the _length in milliseconds_ of the interval
 
 1. Define an `update()` function at the bottom of your script and include a `console.log()` message in it that says something like "Update!"
-1. In the function called by "document ready" call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
+1. In your `setup` function call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
 
 Once this works, you'll see the "Update!" message repeating at the interval.
 
@@ -153,7 +152,7 @@ function update() {
 Each interval we need to check each of the spans on the page and potentially reveal them one at a time. So we'll need to call a updating function on each span on the page to handle this.
 
 1. Define a new function called `updateSpan()` or similar and put a `console.log()` in it that reports something like "Updating span!"
-1. In your `update()` function use jQuery's `.each()` method to call this new function on all the spans on the page. (You'll need to __select__ the spans and then use jQuery's `each()` method on them, look it up in the API.)
+1. In your `update()` function use jQuery's `.each()` method to call this new function on all the spans on the page. (You'll need to __select__ the spans and then use jQuery's `each()` method on the selection - here is the [jQuery documentation for `each()`](https://api.jquery.com/each/#each-function) to look at.)
 
 ???
 
@@ -174,7 +173,7 @@ function updateSpan() {
 
 ## 7. Updating each span
 
-Now we want to define our `updateSpan()` function so it will randomly change a span from redacted to revealed. (Remember, this function will be called repeatedly over time on all the spans so that eventually they'll all be revealed.)
+Now we want our `updateSpan()` function to randomly change the currently selected (by `each()`) span from redacted to revealed. (Remember, this function will be called repeatedly over time on all the spans so that eventually they'll all be revealed.)
 
 In your `updateSpan` function:
 1. Generate a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
@@ -217,8 +216,8 @@ function updateSpan() {
 
 We want the user to be able to redact revealed passages by clicking on them, so we need a click event handler using jQuery's `on` function
 
-1. Define a new function called something like `spanClicked` to handle clicks, in the function you should add the "redacted" class to the clicked span (again with the `this` selector) and also remove the "revealed" class from the clicked span (`this` selector)
-1. In the "document ready" function, add a 'click' event to all spans ("span" selector) using `on()` that calls your `spanClicked` function
+1. In your `setup` function, add a 'click' event to all spans ("span" selector) using `on()` that calls a `spanClicked` function
+1. Define a new function called `spanClicked` to handle the clicks, in the function you should add the "redacted" class to the clicked span (again with the `this` selector) and also remove the "revealed" class from the clicked span (`this` selector)
 
 (Look up the `on` event in the jQuery API if you want to see an example.)
 
@@ -238,7 +237,7 @@ function spanClicked() {
 }
 ```
 
-- Note that there is also a `.click()` method that does the same thing in a very slightly different way:
+- Note that there is also a `.click()` method that does the same thing in a very slightly different syntax:
 
 ```javascript
 $(document).ready(setup);
