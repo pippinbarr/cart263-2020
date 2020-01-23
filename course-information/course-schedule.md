@@ -90,7 +90,7 @@
 - __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2020/examples/jquery/sixshooter.zip))
 
 ## Hand-in
-- [__Assignment 1__](../assignments/assignment1/README.md)
+- [__Assignment 1: Pixel Painter Pro__](../assignments/assignment1/README.md)
 
 ## Homework
 - [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md) __NOTE: Small grading approach adjustment__
