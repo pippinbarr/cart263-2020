@@ -272,7 +272,7 @@ After this step we're done!
 __Solution:__
 
 ```javascript
-let $spans
+let $spans;
 
 $(document).ready(setup);
 
