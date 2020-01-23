@@ -18,7 +18,7 @@
 
 ---
 
-## A process for "first contact" with a new library
+## A process for your "first date" with a new library
 
 1. Go to the homepage and read the introductory material
 1. Find resources provided for learning the library, especially __examples__ and __tutorials__
