@@ -272,8 +272,12 @@ After this step we're done!
 __Solution:__
 
 ```javascript
+let $spans
+
+$(document).ready(setup);
+
 function setup () {
-  let $spans = $('span');
+  $spans = $('span');
   setInterval(update,500);
   $spans.on('click',spanClicked);
 };
