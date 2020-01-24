@@ -173,7 +173,7 @@ function updateSpan() {
 
 ## 7. Updating each span
 
-Now we want our `updateSpan()` function to randomly change the currently selected (by `each()`) span from redacted to revealed. (Remember, this function will be called repeatedly over time on all the spans so that eventually they'll all be revealed.)
+Now we want our `updateSpan()` function to randomly change the currently selected (by `each()`) span from redacted to revealed. (This function will be called repeatedly on all the spans so that eventually they'll all be revealed.)
 
 In your `updateSpan` function:
 1. Generate a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
