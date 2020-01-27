@@ -7,7 +7,7 @@
 
 - ~~[Week 1](#week-1) - JavaScript review~~
 - ~~[Week 2](#week-2) - HTML, CSS, and the DOM~~
-- [Week 3](#week-3) - jQuery
+- ~~[Week 3](#week-3) - jQuery~~
 - [Week 4](#week-4) - jQuery UI
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]
 - [Week 6](#week-6) - Voices
@@ -74,8 +74,8 @@
 
 ---
 
-# Week 3
-# jQuery
+# ~~Week 3~~
+# ~~jQuery~~
 
 ## Frontmatter
 - [__Project 1__](../projects/project1/README.md)
@@ -109,9 +109,11 @@
 
 ## Examples
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/endless-dialogs.zip))
-- __Let's Play: Ancient Greek Punishment: UI Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-ui-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/))
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2020/examples/jqueryui/beach-party.zip))
+- __Let's Play: Ancient Greek Punishment: UI Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-ui-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/))
 - __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/), [Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
+- __It is as if you were making love__ (NSFW?) ([Online](https://pippinbarr.github.io/itisasifyouweremakinglove/), [Repository](https://github.com/pippinbarr/itisasifyouweremakinglove/))
+
 
 ## Hand-in
 - [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md)
