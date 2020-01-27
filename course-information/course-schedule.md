@@ -103,7 +103,7 @@
 
 ## Topic
 - __Basic sound__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/sound-basic-sound))
-- __jQuery UI__ ([Homepage](https://jqueryui.com/))
+- __jQuery UI__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/jqueryui/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/jqueryui/jqueryui))
 
 ## Activity
 - __Eat Up__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-eat-up), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/jqueryui/eat-up/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/jqueryui/eat-up/), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/jqueryui/eat-up.zip))
