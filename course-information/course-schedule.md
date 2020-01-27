@@ -102,6 +102,7 @@
 # jQuery UI
 
 ## Topic
+- __Basic sound__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/sound-basic-sound))
 - __jQuery UI__ ([Homepage](https://jqueryui.com/))
 
 ## Activity
