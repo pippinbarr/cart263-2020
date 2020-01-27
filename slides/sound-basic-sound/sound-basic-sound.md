@@ -1,5 +1,3 @@
-### Sound / CART 253 / Pippin Barr
-
 # Basic sound
 
 ---
@@ -29,22 +27,17 @@
 
 ## Loading a sound
 
-- To play a sound we need to load it and store it in a variable, ideally in `preload()`
+- To play a sound we need to load it and store it in a variable
 - It is mercifully simple:
 
 ```javascript
-let exampleSound;
-
-function preload() {
-  exampleSound = new Audio("assets/sounds/exampleSound.mp3");
-}
+const exampleSound = new Audio("assets/sounds/exampleSound.mp3");
 ```
 --
 
 - Now the variable `exampleSound` has our sound stored inside it
 - Note that in this example our sound file is stored in the `assets/sounds` folder to keep everything nicely organised
-- For now just use this syntax and don't worry about the `new` etc.
-- We will talk about that soon enough
+- Note how our `exampleSound` is an __object__ instantiated from the `Audio` class (provided by the browser API)
 
 ---
 
@@ -53,11 +46,9 @@ function preload() {
 - The `.play()` function for audio allows us to play a sound file stored in a variable
 
 ```javascript
-let exampleSound;
+const exampleSound = new Audio("assets/sounds/exampleSound.mp3");
 
-function preload() {
-  exampleSound = new Audio("assets/sounds/exampleSound.mp3");
-}
+$(document).ready(setup);
 
 function setup() {
   exampleSound.play();
@@ -72,7 +63,7 @@ function setup() {
 
 ---
 
-## `.play()` and the "autoplay" restriction in Browser
+## `.play()` and the "autoplay" restriction in Browsers
 
 - Many browsers restrict the playing of sounds (and videos) on webpages by requiring that the user of the page __interact__ (press a key, click the mouse) with it before a sound can be played
 - This means, for instance, that playing a sound in `setup()` won't work, because the user hasn't interacted with the page yet
@@ -84,33 +75,18 @@ function setup() {
 ## Waiting for an interaction before playing sound
 
 ```javascript
-let music;
-let started = false;
+const music = new Audio("assets/sounds/music.mp3");
 
-function preload() {
-  music = new Audio("assets/sounds/music.mp3");
-}
+$(document).ready(setup);
 
 function setup() {
-  createCanvas(500,500);
+  $(document).one('mousedown',startMusic); // .one() let's us listen for an event just once!
 }
 
-function draw() {
-  background(255);
-  if (!started) {
-    text("CLICK TO PLAY",0,250);
-  }
-  else {
-    text("THE SOUND OF MUSIC!",0,250);
-  }
-}
-
-function mousePressed() {
+function startMusic() {
   music.play();
-  let started = true;
 }
 ```
-
 
 ---
 
