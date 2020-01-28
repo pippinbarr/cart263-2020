@@ -36,80 +36,69 @@ $(document).ready(function() {
     // Make it draggable...
     $(this).draggable({
       // The start property takes a function that is called when dragging starts
-      start: function() {
-        console.log("test...")
-        // If they do start dragging it
-
-        // First we add a new master version back onto the page (since we're
-        // dragging away its element right now), we can 'clone' the currently
-        // selected element for this (but we'll have to adjust it a bit)
-        $('#content').append($(this).clone());
-        // Now we can safely make the one we're dragging not the master
-        $(this).removeClass('master');
-        // Remove the 'start' event so it doesn't keep duplicating
-        $(this).draggable({
-          start: undefined,
-        });
-      },
+      start: startMasterDrag,
       // The stop property contains a function that is called when the dragging is stopped
       // e.g. the mouse is released
-      stop: function() {
-        // Did they drag it far enough out of the interface area?
-        if ((Math.abs($(this).position().top) > $(window).height() * 0.85) && (Math.abs($(this).position().left) < 180)) {
-          // If not, then remove the dragged element entirely because it's not far enough onto the beach
-          $(this).remove();
-          // Return immediately to avoid the rest of this function
-          return;
-        }
-        // If we get here, it was dragged onto the beach, so...
-
-        // We can make it resizable (the CSS class, not the jQuery yet)
-        $(this).addClass('resizable');
-        $(this).resizable({
-          aspectRatio: true, // Maintain the aspect ratio
-        });
-        // We need to explicitly call resizable with 'enable' in case
-        // this element had been disabled previously.
-        $(this).resizable('enable');
-
-        // When the user stops dragging, we should turn on the music
-        // if this is the first time they've interacted.
-        handleMusic();
-
-        // Fade out the instructions
-        // (If they're already faded out, this won't do anything)
-        $('#instruction').fadeOut(5000);
-      }
+      stop: stopMasterDrag
     });
   });
 
   // When the user mouses over a resizable element, we use jQuery
   // to make it be resizable
-  $('#content').on('mouseover', '.resizable', function() {
-    $(this).resizable({
-      aspectRatio: true, // Maintain the aspect ratio
-    });
-    // We need to explicitly call resizable with 'enable' in case
-    // this element had been disabled previously.
-    $(this).resizable('enable');
-  });
+  $('#content').on('mouseover', '.resizable', enableResizeable);
 
   // If the user moves the mouse off a resizable element,
   // turn of jQuery's resizable so that the little resizing
   // arrow disappears when not needed.
-  $('#content').on('mouseout', '.resizable', function() {
-    $(this).resizable('disable');
-  });
+  $('#content').on('mouseout', '.resizable', disableResizeable);
 
   // And we can delete instances by double cilcking them
   // We can find them by selecting for "resizable"
-  $('#content').on('dblclick', '.resizable', function() {
-    // But first check it isn't the master UI version
-    if (!$(this).hasClass('master')) {
-      $(this).remove();
-    }
-  });
+  $('#content').on('dblclick', '.resizable', deleteImage);
 });
+
+// Called when the user starts to drag one of the master images in the UI
+function startMasterDrag() {
+  // First we add a new master version back onto the page (since we're
+  // dragging away its element right now), we can 'clone' the currently
+  // selected element for this (but we'll have to adjust it a bit)
+  $('#content').append($(this).clone());
+  // Now we can safely make the one we're dragging not the master
+  $(this).removeClass('master');
+  // Remove the 'start' event so it doesn't keep duplicating
+  $(this).draggable({
+    start: undefined,
+  });
+}
+
+// Called when the user stops dragging a master image (or any other image actually)
+function stopMasterDrag() {
+  // Did they drag it far enough out of the interface area?
+  if ((Math.abs($(this).position().top) > $(window).height() * 0.85) && (Math.abs($(this).position().left) < 180)) {
+    // If not, then remove the dragged element entirely because it's not far enough onto the beach
+    $(this).remove();
+    // Return immediately to avoid the rest of this function
+    return;
+  }
+  // If we get here, it was dragged onto the beach, so...
+
+  // We can make it resizable (the CSS class, not the jQuery yet)
+  $(this).addClass('resizable');
+  $(this).resizable({
+    aspectRatio: true, // Maintain the aspect ratio
+  });
+  // We need to explicitly call resizable with 'enable' in case
+  // this element had been disabled previously.
+  $(this).resizable('enable');
+
+  // When the user stops dragging, we should turn on the music
+  // if this is the first time they've interacted.
+  handleMusic();
+
+  // Fade out the instructions
+  // (If they're already faded out, this won't do anything)
+  $('#instruction').fadeOut(5000);
+}
 
 // Called when the user stops resizing an element...
 function handleMusic() {
@@ -121,5 +110,28 @@ function handleMusic() {
     music.volume = 1;
     // Now we play it.
     music.play();
+  }
+}
+
+// Enables resizeable on the selected element
+function enableResizeable() {
+  $(this).resizable({
+    aspectRatio: true, // Maintain the aspect ratio
+  });
+  // We need to explicitly call resizable with 'enable' in case
+  // this element had been disabled previously.
+  $(this).resizable('enable');
+}
+
+// Disable resizing on the selected element
+function disableResizeable() {
+  $(this).resizable('disable');
+}
+
+// Delete the selected element
+function deleteImage() {
+  // But first check it isn't the master UI version
+  if (!$(this).hasClass('master')) {
+    $(this).remove();
   }
 }
