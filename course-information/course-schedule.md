@@ -121,6 +121,8 @@
 
 ## Homework
 - [__Project 1__](../projects/project1/README.md)
+- (Optional) [__Challenge 2: Eat Up Extension__](../assignments/challenge2/README.md)
+
 
 ---
 
