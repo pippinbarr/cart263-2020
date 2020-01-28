@@ -123,7 +123,7 @@ function setup() {
 1. In `setup()` use jQuery UI to make the mouth `droppable` (look it up)
 1. When making it droppable, add an option to call a function called `onDrop` an element is dropped (look it up)
 1. Define the `onDrop` function below `setup` and have it `console.log()` something to show it works
-1. Take special note of the parameters that this handler (`onDrop`) will receive by default (can be seen in the demos or the API)
+1. Take note of the parameters that this handler (`onDrop`) will receive by default (can be seen in the demos or the API) - make sure you include those parameters in your function definition
 
 Now you should be able to drag the fly onto the mouth and see your message in the console!
 
@@ -149,7 +149,7 @@ function onDrop(event, ui) {
 
 ## 7. Make the fly vanish when it's dropped on the mouth
 
-1. In `onDrop`, use jQuery's `remove()` function to remove the fly when it's dropped (note that you can use `$fly` to target the fly or you can use `ui.draggable` to generically target the element that was dropped, __the latter is better__)
+1. In `onDrop`, use jQuery's `.remove()` function to remove the fly when it's dropped (note that you can use `$fly` to target the fly or you can use `ui.draggable` to generically target the element that was just dropped, __the latter is better__)
 
 Now when you drag the fly onto the mouth it should vanish!
 
@@ -170,7 +170,7 @@ function onDrop(event, ui) {
 1. Define the `chew()` function in your code, it should:
   1. Check if the current image displayed in the mouth element is open (use jQuery's `attr()` function to check if the `src` attribute matches the path of the open mouth image)
   1. If it is, swap the image to the closed image (use `attr()` to **set** the `src` property)
-  1. If it isn't it must be closed, so swap the image to the open image
+  1. If it isn't it must be closed, so set the image to the open image
 
 Now when you drag the fly onto the mouth it should vanish and the mouth should start "chewing"!
 
@@ -201,7 +201,7 @@ function chew() {
 1. Pause the buzzing sound effect when the user drops the fly on the mouth
 1. Add the chewing sound effect to the program, play it every time the mouth is changed to the closed image
 
-Now when you run the page and start draggin the mouse you should hear buzzing, and when you drop the fly on the mouth it should vanish and stop buzzing, and a chewing sound should start. Done!
+Now when you run the page and start dragging the mouse you should hear buzzing, and when you drop the fly on the mouth it should vanish and stop buzzing, and a chewing sound should start. Done!
 
 ???
 
