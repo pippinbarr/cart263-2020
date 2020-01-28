@@ -37,15 +37,19 @@ $(document).ready(function() {
     $(this).draggable({
       // The start property takes a function that is called when dragging starts
       start: function() {
+        console.log("test...")
         // If they do start dragging it
 
         // First we add a new master version back onto the page (since we're
         // dragging away its element right now), we can 'clone' the currently
-        // selected element for this
+        // selected element for this (but we'll have to adjust it a bit)
         $('#content').append($(this).clone());
-
         // Now we can safely make the one we're dragging not the master
         $(this).removeClass('master');
+        // Remove the 'start' event so it doesn't keep duplicating
+        $(this).draggable({
+          start: undefined,
+        });
       },
       // The stop property contains a function that is called when the dragging is stopped
       // e.g. the mouse is released
