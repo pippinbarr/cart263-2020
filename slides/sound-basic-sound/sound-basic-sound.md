@@ -1,4 +1,4 @@
-# Basic sound
+# Basic sound {
 
 ---
 
@@ -143,4 +143,4 @@ exampleSound.play();
 
 ---
 
-# Fin.
+# }

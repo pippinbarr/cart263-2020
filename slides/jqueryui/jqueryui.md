@@ -238,7 +238,7 @@ $('.square').animate({
 
 ---
 
-## Note just color
+## Not just color
 
 - The point of the broader jQuery `.animate()` is to animate __any__ CSS (that it makes sense to animate)
 - So we can animate dimensions, positions, font sizes, and so on
