@@ -77,8 +77,10 @@
 # ~~Week 3~~
 # ~~jQuery~~
 
+
 ## Frontmatter
 - [__Project 1__](../projects/project1/README.md)
+- [__Empty Project Template__](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip)
 
 ## Topic
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/jquery/jquery))
@@ -100,6 +102,8 @@
 
 # Week 4
 # jQuery UI
+
+- [__Empty Project Template__](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip)
 
 ## Topic
 - __Basic sound__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/sound-basic-sound/sound-basic-sound))

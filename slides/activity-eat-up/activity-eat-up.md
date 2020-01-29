@@ -15,7 +15,7 @@ An experience in which:
 
 ## 1. Start a project
 
-Download an empty project template (**not** p5) project and include jQuery and jQuery UI by adding the appropriate CDN script tags to `index.html`, e.g.
+Download an __empty project template__ (**not** p5) project and include jQuery and jQuery UI by adding the appropriate CDN script tags to `index.html`, e.g.
 
 ```html
 <script
