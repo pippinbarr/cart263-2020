@@ -6,11 +6,10 @@
 
 An experience in which:
 
-- We see an image of a mouth and a fly on screen
+- We see an image of an animal and a fly on screen
 - The fly starts making a buzzing sound on mouse down (and stops on mouse up)
 - We can drag the fly around on the screen
-- If we drop the fly on the mouth, the fly vanishes and the mouth starts chewing (and making a chewing sound)
-- Disgusting!
+- If we drop the fly on the animal, the fly vanishes and the animal starts chewing (and making a chewing sound)
 
 ---
 
@@ -45,18 +44,18 @@ Download an empty project template (**not** p5) project and include jQuery and j
 ## 2. Create the basic HTML content
 
 1. Add two images to `index.html` (`img` elements):
-1. One should be an image of an open mouth with an `id` of `mouth`
+1. One should be an image of the animal with an open mouth with an `id` of `animal`
 1. One should be an image of a fly with an `id` of `fly`
 1. (Obviously you'll need to put the images themselves in the appropriate folder and link to them)
 
-(To save time, use [this fly](https://github.com/pippinbarr/cart263-2020/raw/master/activities/jqueryui/eat-up/assets/images/fly.png)] and [this open mouth](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/mouth-open.png), and download [this closed mouth](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/mouth-closed.png) for later)
+(To save time, use [this fly](https://github.com/pippinbarr/cart263-2020/raw/master/activities/jqueryui/eat-up/assets/images/fly.png)] and [this open mouthed animal](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/open.png), and download [this chewing GIF](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/chewing.gif) for later)
 
-You should now be able to view the page in your browser, and see a mouth and a fly.
+You should now be able to view the page in your browser, and see the animal with its mouth open and a fly.
 
 ???
 
 ```html
-<img id="mouth" src="assets/images/mouth-open.png" />
+<img id="animal" src="assets/images/open.png" />
 <img id="fly" src="assets/images/fly.png" />
 ```
 
@@ -80,19 +79,19 @@ function setup() {
 
 ## 4. Save variables containing the mouth and fly elements on the page
 
-1. Declare two variables at the top of your program to store the mouth and fly elements (since we're using jQuery you should prefix the variable names with `$`)
+1. Declare two variables at the top of your program to store the animal and fly elements (since we're using jQuery you should prefix the variable names with `$`)
 1. In your "document ready" function, use jQuery to select the two elements on the page and store them in the appropriate variables
 
 ???
 
 ```javascript
-let $mouth;
+let #animal;
 let $fly;
 
 $(document).ready(setup);
 
 function setup() {
-  $mouth = $("#mouth");
+  $animal = $("#$animal");
   $fly = $("#fly");
 }
 ```
@@ -109,7 +108,7 @@ You should now be able to drag the fly around on the screen!
 
 ```javascript
 function setup() {
-  $mouth = $("#mouth");
+  $animal = $("#animal");
   $fly = $("#fly");
 
   $fly.draggable();
@@ -118,24 +117,24 @@ function setup() {
 
 ---
 
-## 6. Make the mouth droppable
+## 6. Make the animal droppable
 
-1. In `setup()` use jQuery UI to make the mouth `droppable` (look it up)
+1. In `setup()` use jQuery UI to make the animal `droppable` (look it up)
 1. When making it droppable, add an option to call a function called `onDrop` an element is dropped (look it up)
 1. Define the `onDrop` function below `setup` and have it `console.log()` something to show it works
 1. Take note of the parameters that this handler (`onDrop`) will receive by default (can be seen in the demos or the API) - make sure you include those parameters in your function definition
 
-Now you should be able to drag the fly onto the mouth and see your message in the console!
+Now you should be able to drag the fly onto the animal and see your message in the console!
 
 ???
 
 ```javascript
 function setup() {
-  $mouth = $("#mouth");
+  $animal = $("#animal");
   $fly = $("#fly");
 
   $fly.draggable();
-  $mouth.droppable({
+  $animal.droppable({
     drop: onDrop
   });
 }
@@ -147,11 +146,11 @@ function onDrop(event, ui) {
 
 ---
 
-## 7. Make the fly vanish when it's dropped on the mouth
+## 7. Make the fly vanish when it's dropped on the animal
 
 1. In `onDrop`, use jQuery's `.remove()` function to remove the fly when it's dropped (note that you can use `$fly` to target the fly or you can use `ui.draggable` to generically target the element that was just dropped, __the latter is better__)
 
-Now when you drag the fly onto the mouth it should vanish!
+Now when you drag the fly onto the animal it should vanish!
 
 ???
 
@@ -164,30 +163,20 @@ function onDrop(event, ui) {
 
 ---
 
-## 8. Make the mouth chew when it has eaten a fly
+## 8. Make the animal chew when it has eaten a fly
 
-1. After removing the fly, use `setInterval()` to repeatedly call a `chew()` function at some interval (you can tweak the number to your liking)
-1. Define the `chew()` function in your code, it should:
-  1. Check if the current image displayed in the mouth element is open (use jQuery's `attr()` function to check if the `src` attribute matches the path of the open mouth image)
-  1. If it is, swap the image to the closed image (use `attr()` to **set** the `src` property)
-  1. If it isn't it must be closed, so set the image to the open image
+To make the animal chew we'll need to replace the current static image (`open.png`) with the animated GIF version (`chewing.gif`).
 
-Now when you drag the fly onto the mouth it should vanish and the mouth should start "chewing"!
+1. In the `onDrop()` function, use jQuery's `.attr()` function to set the `src` attribute of the animal to the path to the chewing animated GIF
+
+Now when you drag the fly onto the animal it should vanish and the animal should start "chewing"!
 
 ???
 
 ```javascript
 function onDrop(event, ui) {
   ui.draggable.remove();
-  setInterval(chew, 250);
-}
-
-function chew() {
-  if ($mouth.attr("src") === "assets/images/mouth-open.png") {
-    $mouth.attr("src", "assets/images/mouth-closed.png");
-  } else {
-    $mouth.attr("src", "assets/images/mouth-open.png");
-  }
+  $animal.attr('src','assets/images/chewing.gif');
 }
 ```
 
@@ -196,12 +185,12 @@ function chew() {
 ## 9. Add sound effects
 
 1. Obtain the [buzzing sound](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/sounds/buzz.mp3) and [chewing sound](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/sounds/crunch.wav) and add them to your project folder (you may need to explicitly "save" them from the file menu)
-1. Add the buzzing sound effect to the program, set it to loop, and add a `mousedown` event to the fly element that plays the buzzing sound (to avoid problems with triggering sounds before any interaction)
-1. Pause the buzzing sound effect on the `mouseup` event on the fly
-1. Pause the buzzing sound effect when the user drops the fly on the mouth
-1. Add the chewing sound effect to the program, play it every time the mouth is changed to the closed image
+1. Add the buzzing sound effect to the program (load it into a variable), set it to loop
+1. Add the chewing sound effect to the program (load it into a variable)
+1. In the `.draggable()` function call add the options for a `start` and `stop` event handler. In the start function play the buzzing sound, in the stop function pause the buzzing sound.
+1. Set the chewing sound to loop and play it in the `onDrop()` function
 
-Now when you run the page and start dragging the mouse you should hear buzzing, and when you drop the fly on the mouth it should vanish and stop buzzing, and a chewing sound should start. Done!
+Now when you run the page and start dragging the mouse you should hear buzzing, and when you drop the fly on the animal it should vanish and stop buzzing, and a chewing sound should start. Done!
 
 ???
 
@@ -215,23 +204,23 @@ let crunchSFX = new Audio("assets/sounds/crunch.wav");
 // In document ready
 buzzSFX.loop = true;
 
-$fly.on('mousedown',function () {
-  buzzSFX.play();
-});
-$fly.on('mouseup',function () {
-  buzzSFX.pause();
+$fly.draggable({
+  start: function () {
+    buzzSFX.play();
+  },
+  stop: function () {
+    buzzSFX.pause();
+  }
 });
 
 ...
 
-// In the drop handler function
-crunchSFX.play();
-buzzSFX.pause();
-
-...
-
-// In the mouse closed part of your if statement in the interval function
-crunchSFX.play();
+function onDrop(event, ui) {
+  ui.draggable.remove();
+  $animal.attr('src','assets/images/chewing.gif');
+  crunchSFX.loop = true;
+  crunchSFX.play();
+}
 ```
 
 ---
