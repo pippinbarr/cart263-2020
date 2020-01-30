@@ -190,7 +190,7 @@ function onDrop(event, ui) {
 1. In the `.draggable()` function call add the options for a `start` and `stop` event handler. In the start function play the buzzing sound, in the stop function pause the buzzing sound.
 1. Set the chewing sound to loop and play it in the `onDrop()` function
 
-Now when you run the page and start dragging the mouse you should hear buzzing, and when you drop the fly on the animal it should vanish and stop buzzing, and a chewing sound should start. Done!
+Now when you run the page and start dragging the fly you should hear buzzing, and when you drop the fly on the animal it should vanish and stop buzzing, and a chewing sound should start. Done!
 
 ???
 
