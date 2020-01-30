@@ -48,7 +48,7 @@ Download an __empty project template__ (**not** p5) project and include jQuery a
 1. One should be an image of a fly with an `id` of `fly`
 1. (Obviously you'll need to put the images themselves in the appropriate folder and link to them)
 
-(To save time, use [this fly](https://github.com/pippinbarr/cart263-2020/raw/master/activities/jqueryui/eat-up/assets/images/fly.png)] and [this open mouthed animal](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/open.png), and download [this chewing GIF](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/chewing.gif) for later)
+(To save time, use [this fly](https://github.com/pippinbarr/cart263-2020/raw/master/activities/jqueryui/eat-up/assets/images/fly.png) and [this open mouthed animal](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/open.png), and download [this chewing GIF](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/jqueryui/eat-up/assets/images/chewing.gif) for later)
 
 You should now be able to view the page in your browser, and see the animal with its mouth open and a fly.
 
