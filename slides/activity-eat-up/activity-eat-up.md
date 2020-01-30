@@ -85,7 +85,7 @@ function setup() {
 ???
 
 ```javascript
-let #animal;
+let $animal;
 let $fly;
 
 $(document).ready(setup);
