@@ -120,7 +120,7 @@ function setup() {
 ## 6. Make the animal droppable
 
 1. In `setup()` use jQuery UI to make the animal `droppable` (look it up)
-1. When making it droppable, add an option to call a function called `onDrop` an element is dropped (look it up)
+1. When making it droppable, add an option to call a function called `onDrop` when an element is dropped (look it up)
 1. Define the `onDrop` function below `setup` and have it `console.log()` something to show it works
 1. Take note of the parameters that this handler (`onDrop`) will receive by default (can be seen in the demos or the API) - make sure you include those parameters in your function definition
 
