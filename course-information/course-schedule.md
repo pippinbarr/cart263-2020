@@ -8,7 +8,7 @@
 - ~~[Week 1](#week-1) - JavaScript review~~
 - ~~[Week 2](#week-2) - HTML, CSS, and the DOM~~
 - ~~[Week 3](#week-3) - jQuery~~
-- [Week 4](#week-4) - jQuery UI
+- ~~[Week 4](#week-4) - jQuery UI~~
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]
 - [Week 6](#week-6) - Voices
 - [Week 7](#week-7) - Text and Data
@@ -100,8 +100,8 @@
 
 ---
 
-# Week 4
-# jQuery UI
+# ~~Week 4~~
+# ~~jQuery UI~~
 
 - [__Empty Project Template__](https://github.com/pippinbarr/cart263-2020/raw/master/templates/empty-project.zip)
 
@@ -134,14 +134,13 @@
 # Phaser, Project 1 hand-in
 
 ## Topics
-- __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/))
-- Note: __Phaser 2/CE__ ([Homepage](https://github.com/photonstorm/phaser-ce), [Examples](http://phaser.io/examples), [API](https://photonstorm.github.io/phaser-ce/))
-
-## "Activity"
-- Making Your First Phaser 3 Game ([Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Tutorial Code](https://phaser.io/tutorials/making-your-first-phaser-3-game/phaser3-tutorial-src.zip), [Pippin's Hyper-Commented Tutorial Code](../activities/phaser/))
+- __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/), [Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Pippin's Hyper-Commented Tutorial Code](../examples/phaser/)) (__Important:__ be aware that Phaser 2 is still popular and advice/examples for Phaser 2 are __not__ compatible with Phaser 3. I advise using Phaser 3 if you can, as it's the more contemporary version.)
 
 ## Examples
-- [Let's Play: Ancient Greek Punishment: Inversion Edition (Phaser 3)](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
+- [Let's Play: Ancient Greek Punishment: Inversion Edition](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
+- [Let's Play: Ancient Greek Punishment: Teaches Typing](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing)
+- [Let's Play: Ancient Greek Punishment: Competition Edition](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-competition-edition)
+- [The Artist Is Present 2](https://github.com/pippinbarr/the-artist-is-present-2)
 
 ## Studio time for [__Project 1__](../projects/project1/README.md)
 
@@ -199,7 +198,7 @@
 - [__Assignment 3__](../assignments/assignment3/README.md)
 
 ## Homework
-- [__Project 3__](../projects/project3/README.md)
+- [__Project 2__](../projects/project2/README.md)
 
 ---
 

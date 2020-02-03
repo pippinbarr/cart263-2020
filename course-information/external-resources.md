@@ -10,6 +10,7 @@ __If you find something amazing to add to this then email Pippin!__
 - [CSS](#css)
 - [jQuery](#jquery)
 - [jQuery UI](#jquery-ui)
+- [Phaser 3](#phaser-3)
 - [ResponsiveVoice](#responsivevoice)
 - [Annyang!](#annyang)
 - [localStorage](#annyang)
