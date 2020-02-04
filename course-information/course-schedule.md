@@ -127,14 +127,13 @@
 - [__Project 1__](../projects/project1/README.md)
 - (Optional) [__Challenge 2: Eat Up Extension__](../assignments/challenge2/README.md)
 
-
 ---
 
 # Week 5
 # Phaser, Project 1 hand-in
 
 ## Topics
-- __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/), [Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Pippin's Hyper-Commented Tutorial Code](../examples/phaser/)) (__Important:__ be aware that Phaser 2 is still popular and advice/examples for Phaser 2 are __not__ compatible with Phaser 3. I advise using Phaser 3 if you can, as it's the more contemporary version.)
+- __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/), [Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Pippin's Hyper-Commented Tutorial Code](../examples/phaser/), [Playable Version](https://pippinbarr.github.io/cart263-2020/examples/phaser/)) (__Important:__ be aware that Phaser 2 is still popular and advice/examples for Phaser 2 are __not__ compatible with Phaser 3. I advise using Phaser 3 if you can, as it's the more contemporary version.)
 
 ## Examples
 - [Let's Play: Ancient Greek Punishment: Inversion Edition](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
@@ -171,7 +170,6 @@
 ## Homework
 - [__Assignment 3__](../assignments/assignment3/README.md)
 - [__Project 2__](../projects/project2/README.md)
-
 
 ---
 
