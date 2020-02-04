@@ -44,4 +44,4 @@ __Implementation (50%)__. Runs without errors. Meets the key technical requireme
 
 __Creativity (30%)__. Uses code to create an interesting and expressive experience for the user. Has a clear point of view and conveys it well. Uses code in surprising ways to create new ideas. Goes beyond the most obvious uses of the chosen technologies. Artist's statement clearly explains the design and implementation in terms of its desire effect.
 
-__Style (20%)__. the code is well-commented, well-formatted and indented, uses good names for variables, functions, classes, etc., attributes the use of pre-existing code, and has a good number of commits with well-written commit messages that include the project prefix "P3:".
+__Style (20%)__. the code is well-commented, well-formatted and indented, uses good names for variables, functions, classes, etc., attributes the use of pre-existing code, and has a good number of commits with well-written commit messages that include the project prefix "P1:".
