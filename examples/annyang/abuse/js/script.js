@@ -30,8 +30,12 @@ let abusePhrases = [
 // A variable to store the current thing the user
 // should be saying. Starts as nothing.
 let currentPhrase = '';
+// A variable to store the command text element
+let $command;
 
-$(document).ready(function() {
+$(document).ready(setup);
+
+function setup() {
 
   // Make sure annyang is available...
   if (annyang) {
@@ -57,10 +61,11 @@ $(document).ready(function() {
     // Choose a phrase for the user to say first
     currentPhrase = getNewPhrase();
 
+    $command = $('#command');
     // Display the phrase on the page
-    $('#command').text('Say, "I am ' + currentPhrase + '."');
+    $command.text(`Say, "I am ${currentPhrase}."`);
   }
-});
+};
 
 
 // handleUserSpeech(phrase)
@@ -78,16 +83,16 @@ function handleUserSpeech(phrase) {
     // If they said the right thing, we emphasise it...
     // (Note the use of backslash (\) to "escape" the apostrophe in That's
     // so that it doesn't interfere with our string.)
-    $('#command').text('That\'s right. You are ' + phrase + '.');
+    $command.text(`That's right. You are ${phrase}.`);
     // Get a new thing for them to say
     currentPhrase = getNewPhrase();
     // And tell them to say it
-    $('#command').append(' Now say "I am ' + currentPhrase + '".');
+    $command.append(` Now say "I am ${currentPhrase}."`);
   }
   else {
     // If they said the wrong thing, correct them and demand
     // they say it.
-    $('#command').text('That\'s not right. Say "I am ' + currentPhrase + '".');
+    $command.text(`That's not right. Say "I am ${currentPhrase}".`);
   }
 }
 
