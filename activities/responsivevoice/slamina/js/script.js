@@ -171,18 +171,8 @@ $(document).ready(setup);
 
 // setup()
 //
-// In order to be able to play sound, our setup involves clicking once
-// to actually start the game.
+// We just start a new round right away!
 function setup() {
-  $('#click-to-begin').on('click',startGame);
-}
-
-// startGame()
-//
-// Remove the click to begin and set up a round of play
-function startGame() {
-  $('#click-to-begin').remove();
-
   newRound();
 }
 
@@ -207,13 +197,13 @@ function newRound() {
   correctAnimal = answers[Math.floor(Math.random() * answers.length)];
 
   // Say the name of the animal
-  speakAnimal(correctAnimal);
+  sayBackwards(correctAnimal);
 }
 
-// speakAnimal(name)
+// sayBackwards(text)
 //
 // Uses ResponsiveVoice to say the specified text backwards!
-function speakAnimal(name) {
+function sayBackwards(text) {
   // We create a reverse version of the name by:
   // 1. using .split('') to split the string into an array with each character
   // as a separate element.
@@ -225,7 +215,7 @@ function speakAnimal(name) {
   // e.g. ['t','a','b'] -> "tab"
   // (We do this all in one line using "chaining" because .split() returns an array for
   // for .reverse() to work on, and .reverse() returns an array for .join() to work on.)
-  let reverseAnimal = name.split('').reverse().join('');
+  let backwardsText = text.split('').reverse().join('');
 
   // Set some random numbers for the voice's pitch and rate parameters for a bit of fun
   let options = {
@@ -235,7 +225,7 @@ function speakAnimal(name) {
 
   // Use ResponsiveVoice to speak the string we generated, with UK English Male voice
   // and the options we just specified.
-  responsiveVoice.speak(reverseAnimal,'UK English Male',options);
+  responsiveVoice.speak(backwardsText, 'UK English Male', options);
 }
 
 // addButton(label)
@@ -244,28 +234,36 @@ function speakAnimal(name) {
 // and adds it to the page.
 function addButton(label) {
   // Create a div with jQuery using HTML
-  let $button = $('<div class="guess"></div>');
+  let $button = $('<div></div>');
+  // Give it the guess class
+  $button.addClass("guess");
   // Set the text in the div to our label
   $button.text(label);
   // Turn the div into a button using jQuery UI's .button() method
   $button.button();
   // Listen for a click on the button which means the user has guessed
-  $button.on('click',function () {
-    // If the button they clicked on has a label matching the correct answer...
-    if ($(this).text() === correctAnimal) {
-      // Remove all the buttons
-      $('.guess').remove();
-      // Start a new round
-      setTimeout(newRound,1000);
-    }
-    else {
-      // Otherwise they were wrong, so shake the button
-      $(this).effect('shake');
-      // And say the correct animal again to "help" them
-      speakAnimal(correctAnimal);
-    }
-  });
-
+  $button.on('click', handleGuess);
   // Finally, add the button to the page so we can see it
   $('body').append($button);
+}
+
+// handleGuess()
+//
+// Checks whether this was the correct guess (button) and
+// if so starts a new round
+// if not indicates it was incorrect
+function handleGuess() {
+  // If the button they clicked on has a label matching the correct answer...
+  if ($(this).text() === correctAnimal) {
+    // Remove all the buttons
+    $('.guess').remove();
+    // Start a new round
+    setTimeout(newRound, 1000);
+  }
+  else {
+    // Otherwise they were wrong, so shake the button
+    $(this).effect('shake');
+    // And say the correct animal again to "help" them
+    speakAnimal(correctAnimal);
+  }
 }
