@@ -9,8 +9,8 @@
 - ~~[Week 2](#week-2) - HTML, CSS, and the DOM~~
 - ~~[Week 3](#week-3) - jQuery~~
 - ~~[Week 4](#week-4) - jQuery UI~~
-- [Week 5](#week-5) - Phaser [_Project 1 Due_]
-- [Week 6](#week-6) - Voices
+- ~~[Week 5](#week-5) - Phaser [_Project 1 Due_]~~
+- __[Week 6](#week-6) - Voices__
 - [Week 7](#week-7) - Text and Data
 - [Reading Week](#reading-week)
 - [Week 8](#week-8) - 3D [_Project 2 Due_]
@@ -129,8 +129,8 @@
 
 ---
 
-# Week 5
-# Phaser, Project 1 hand-in
+# ~~Week 5~~
+# ~~Phaser, Project 1 hand-in~~
 
 ## Topics
 - __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/), [Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Pippin's Hyper-Commented Tutorial Code](../examples/phaser/), [Playable Version](https://pippinbarr.github.io/cart263-2020/examples/phaser/)) (__Important:__ be aware that Phaser 2 is still popular and advice/examples for Phaser 2 are __not__ compatible with Phaser 3. I advise using Phaser 3 if you can, as it's the more contemporary version.)
@@ -155,17 +155,18 @@
 # Voices
 
 ## Topic
-- __ResponsiveVoice__ ([Homepage](https://responsivevoice.org/), [API](https://responsivevoice.org/api/))
-- __annyang__ ([Homepage](https://www.talater.com/annyang/), [API](https://github.com/TalAter/annyang/blob/master/docs/README.md))
+- __ResponsiveVoice__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/responsivevoice/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/responsivevoice/responsivevoice), [Homepage](https://responsivevoice.org/), [API](https://responsivevoice.org/api/))
+- See also: __annyang__ ([Homepage](https://www.talater.com/annyang/), [API](https://github.com/TalAter/annyang/blob/master/docs/README.md))
 
 ## Activity
 - __Slamina__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-slamina), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/responsivevoice/slamina), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/responsivevoice/slamina), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/responsivevoice/slamina.zip))
 
 ## Examples
-- __Browser Feelings__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/responsivevoice/browserfeelings/))
-- __Abuse__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/abuse/))
-- __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
-- __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/responsivevoice/nonsense-generator/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
+- __Browser Feelings__ (ResponsiveVoice) ([Online](https://pippinbarr.github.io/cart263-2020/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/responsivevoice/browserfeelings/))
+- __Nonsense Generator__ (ResponsiveVoice) ([Online](https://pippinbarr.github.io/cart263-2020/examples/responsivevoice/nonsense-generator/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
+- __Abuse__ (Annyang) ([Online](https://pippinbarr.github.io/cart263-2020/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/abuse/))
+- __Doctor, Doctor__ (Annyang and ResponsiveVoice) ([Online](https://pippinbarr.github.io/cart263-2020/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/annyang/doctordoctor/))
+
 
 ## Homework
 - [__Assignment 3__](../assignments/assignment3/README.md)
@@ -179,7 +180,6 @@
 ## Topics
 - __Data__ ([JSON](https://www.w3schools.com/whatis/whatis_json.asp), jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
 - __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
-- __Template strings__ ([MDN Reference entry](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
 - See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
 - See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
