@@ -40,7 +40,7 @@
     - An "academy" section (__not very useful?__)
     - An FAQ (__not very useful?__)
     - A [list of languages](https://responsivevoice.org/text-to-speech-languages/) available (__useful__)
-  - The [API documentation](https://api.jqueryui.com/) (__very useful!__)
+  - The [API documentation](https://responsivevoice.org/api/) (__very useful!__)
 - In our case we'll cover an introduction with the following slides, based on the API
 
 ---
