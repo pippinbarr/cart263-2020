@@ -9,8 +9,8 @@ An experience in which:
 - The user is given five animal names as multiple choice answers
 - The computer reads out one of the animal names in reverse
 - The user clicks on the animal they think it is
-- If right, we get a new animal to guess
-- If wrong, we hear the name again
+  - If right, we get a new animal to guess
+  - If wrong, we hear the name again
 
 ---
 
@@ -48,7 +48,6 @@ Add the following to the libraries section of your HTML:
 1. Declare an array variable at the top of your script called `animals`
 1. Go to https://github.com/dariusk/corpora/blob/master/data/animals/common.json and copy the array of animal names (e.g. the stuff in the square brackets)
 1. Paste the array of animals into your script so that it is stored in the `animals` variable
-1. Add a variable to the top of the script called `correctAnimal` that will store the current correct animal to guess
 
 ???
 
@@ -191,7 +190,6 @@ let animals = [
   "yak",
   "zebra"
 ];
-let correctAnimal;
 ```
 
 ---
@@ -199,10 +197,12 @@ let correctAnimal;
 ## 3. Adding buttons
 
 1. Define a function `addButton(label)` at the bottom of your script (label will be the argument it is passed with the animal name to put on the button):
-  1. Use jQuery to create a `div` element with class `guess` and put it in a variable
-  1. Use jQuery to set the text of the element to the `label` provided
-  1. Use jQuery UI's `.button()` function to turn the element into a button
-  1. Add the button element to the page
+  1. Use jQuery to create a `div` element and store it in a new variable called `$button`
+  1. Use `.addClass()` to add the class `guess` to the `$button`
+  1. Use jQuery to set the text of the `$button` to the `label` provided
+  1. Use jQuery UI's `.button()` function to turn the `$button` into a real button
+  1. Append the `$button` element to the `body` element of the page
+  1. `return` the button element created
 
 Test with:
 
@@ -224,21 +224,39 @@ function addButton(label) {
   $button.text(label);
   $button.button();
   $('body').append($button);
+  return $button;
 }
 ```
 
 ---
 
+## X. Getting a random element from an array
+
+1. Add the following function to your script that chooses and returns a random element from an array provided as a parameter
+
+```javascript
+function getRandomElement(array) {
+  let element = array[Math.floor(Math.random() * array.length)];
+  return element;
+}
+```
+
+(This is __always__ the way to choose a random element from an array, so it's worth __memorizing__.)
+
+---
+
 ## 4. Generating guesses
 
-1. Declare an empty array called `answers` and a constant called `NUM_OPTIONS` with the number of guesses you want at the top of your script,
+1. Declare an empty array called `buttons` at the top of the script
+1. Declare a constant called `NUM_OPTIONS` with a value of 5 at the stop of the script
+1. Declare a variable called `$correctButton` at the top of the script
 1. Define a function called `newRound()` which does the following:
-  1. Sets the `answers` array to be empty
-  1. Runs a for loop `NUM_OPTIONS` times that:
-      1. Chooses a random animal name from the `animals` array
-      1. Uses `addButton` to add a button with that animal's name to the page
-      1. Adds the animal's name to the `answers` (using `push()`)
-  1. Set `correctAnimal` to a random element in the `answers` array
+  1. Set the `buttons` array to be empty
+  1. Run a `for` loop `NUM_OPTIONS` times that:
+      1. Chooses a random animal name from the `animals` array (use `getRandomElement()`)
+      1. Calls `addButton` to add a button with that animal's name to the page and stores the resulting element in a variable called `$button`
+      1. Adds the `$button` to the `buttons` array with `push()`
+  1. Set `$correctButton` to a random element in the `buttons` array (use `getRandomElement()`)
 1. Call `newRound()` in `setup()` (remove your earlier `addButton()` calls from there)
 
 You should see the number of options you specified, one of which will be correct
@@ -249,8 +267,8 @@ __Solution:__
 
 ```javascript
 let animals = [...]; // Animal names are in here
-let correctAnimal;
-let answers = [];
+let $correctButton;
+let buttons = [];
 const NUM_OPTIONS = 5;
 
 function setup() {
@@ -258,13 +276,13 @@ function setup() {
 }
 
 function newRound() {
-  answers = [];
+  buttons = [];
   for (let i = 0; i < NUM_OPTIONS; i++) {
-    let answer = animals[Math.floor(Math.random() * animals.length)];
-    addButton(answer);
-    answers.push(answer);
+    let answer = getRandomElement(animals);
+    let $button = addButton(answer);
+    buttons.push($button);
   }
-  correctAnimal = answers[Math.floor(Math.random() * answers.length)];
+  $correctButton = getRandomElement($button);
 }
 ```
 
@@ -272,9 +290,9 @@ function newRound() {
 
 ## 5. React to the correct guess
 
-1. In `addButton()` we need to make it respond to clicks, so add a click handler (using `.on()`) to the button that is created and have it call a function `handleGuess`
-1. Define the `handleGuess()` at the bottom of your script, it should:
-  1. Use an if statement to check if the button clicked was correct (you can use `$(this).text()` to get the label on the button and compare it to `correctAnimal`)
+1. In `addButton()` we need to make it respond to clicks, so add a click handler (using `.on()`) to the `$button` that calls a function called `handleGuess`
+1. Define `handleGuess()` at the bottom of your script, it should:
+  1. Use an `if` statement to check if the button clicked was correct (you can use `$(this).text()` to get the label on the button and compare it to `$correctButton.text()`)
   1. Use jQuery to remove all guesses from the screen (use the `guess` class to select them)
   1. Call `newRound()` after a delay (use `setTimeout()`)
 
@@ -290,10 +308,11 @@ function addButton(label) {
   $button.button();
   $button.on('click',handleGuess); // NEW
   $('body').append($button);
+  return $button;
 }
 
 function handleGuess() {
-  if ($(this).text() === correctAnimal) {
+  if ($(this).text() === $correctButton.text()) {
     $('.guess').remove();
     setTimeout(newRound,1000);
   }
@@ -308,7 +327,7 @@ function handleGuess() {
   1. Reverse the provided text and store it in a variable (this is kind of complex, so here's the code: `let backwardsText = text.split('').reverse().join('');`
   1. Create an object literal called `options` with properties `rate` and `pitch` set to random numbers between 0 and 1
   1. Use ResponsiveVoice to speak the reversed text, with voice "UK English Male" (or something else), and the options object
-1. In `newRound()` use `sayBackwards()` to speak the name of the correct animal after it has been chosen
+1. In `newRound()` use `sayBackwards()` to speak the `.text()` of `$correctButton` __after__ it has been chosen
 
 ???
 
@@ -327,15 +346,16 @@ function sayBackwards(text) {
 ...
 
 function newRound() {
-  answers = [];
+  buttons = [];
   for (let i = 0; i < NUM_OPTIONS; i++) {
-    let answer = animals[Math.floor(Math.random() * animals.length)];
-    addButton(answer);
-    answers.push(answer);
+    let answer = getRandomElement(animals);
+    let $button = addButton(answer);
+    buttons.push($button);
   }
-  correctAnimal = answers[Math.floor(Math.random() * answers.length)];
-  sayBackwards(correctAnimal); // NEW
+  $correctButton = getRandomElement($button);
+  sayBackwards($correctButton.text()); // NEW
 }
+
 ```
 
 ---
