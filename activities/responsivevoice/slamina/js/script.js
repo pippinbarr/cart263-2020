@@ -194,7 +194,7 @@ function newRound() {
   // Choose a random button from the buttons array as our correct button
   $correctButton = getRandomElement(buttons);
   // Say the label (text) on this button
-  sayBackwards($correctAnimal.text());
+  sayBackwards($correctButton.text());
 }
 
 // sayBackwards(text)
