@@ -45,9 +45,9 @@ Add the following to the libraries section of your HTML:
 
 ## 2. Create an array with a list of animals
 
-1. Declare an array variable at the top of your script called `animals`
-1. Go to https://github.com/dariusk/corpora/blob/master/data/animals/common.json and copy the array of animal names (e.g. the stuff in the square brackets)
-1. Paste the array of animals into your script so that it is stored in the `animals` variable
+1. Declare an empty array called `animals` at the top of your script
+1. Go to https://github.com/dariusk/corpora/blob/master/data/animals/common.json and copy the list of animal names (e.g. the stuff inside the square brackets)
+1. Paste the list of animals into your `animals` array
 
 ???
 
@@ -196,7 +196,7 @@ let animals = [
 
 ## 3. Adding buttons
 
-1. Define a function `addButton(label)` at the bottom of your script (label will be the argument it is passed with the animal name to put on the button):
+1. Write a function `addButton(label)` that does the following:
   1. Use jQuery to create a `div` element and store it in a new variable called `$button`
   1. Use `.addClass()` to add the class `guess` to the `$button`
   1. Use jQuery to set the text of the `$button` to the `label` provided
