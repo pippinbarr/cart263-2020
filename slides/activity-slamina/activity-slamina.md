@@ -198,20 +198,14 @@ let animals = [
 
 1. Write a function `addButton(label)` that does the following:
   1. Use jQuery to create a `div` element and store it in a new variable called `$button`
+    - You can create elements like this: `let $button = $('<div></div>')`
   1. Use `.addClass()` to add the class `guess` to the `$button`
   1. Use jQuery to set the text of the `$button` to the `label` provided
   1. Use jQuery UI's `.button()` function to turn the `$button` into a real button
   1. Append the `$button` element to the `body` element of the page
   1. `return` the button element created
 
-Test with:
-
-```javascript
-function setup() {
-  addButton("Lamb");
-  addButton("Llama");
-}
-```
+Test with by calling `addButton("Llama")` or similar in `setup()` to create a "Llama" button
 
 ???
 
@@ -247,19 +241,15 @@ function getRandomElement(array) {
 
 ## 4. Generating guesses
 
-1. Declare an empty array called `buttons` at the top of the script
-1. Declare a constant called `NUM_OPTIONS` with a value of 5 at the stop of the script
-1. Declare a variable called `$correctButton` at the top of the script
+1. At the top of the script: Declare an empty array called `buttons`, a constant called `NUM_OPTIONS` with a value of 5, and a variable called `$correctButton`
 1. Define a function called `newRound()` which does the following:
   1. Set the `buttons` array to be empty
   1. Run a `for` loop `NUM_OPTIONS` times that:
       1. Chooses a random animal name from the `animals` array (use `getRandomElement()`)
       1. Calls `addButton` to add a button with that animal's name to the page and stores the resulting element in a variable called `$button`
       1. Adds the `$button` to the `buttons` array with `push()`
-  1. Set `$correctButton` to a random element in the `buttons` array (use `getRandomElement()`)
-1. Call `newRound()` in `setup()` (remove your earlier `addButton()` calls from there)
-
-You should see the number of options you specified, one of which will be correct
+  1. Set `$correctButton` to a random element in the `buttons` array
+1. Call `newRound()` in `setup()`
 
 ???
 
