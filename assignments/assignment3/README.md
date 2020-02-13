@@ -1,4 +1,4 @@
-# Assignment 2: Slamina Special
+# Assignment 3: Slamina Special
 
 __Grade__: 2% of final grade (see grading guidelines at bottom)  
 __Deadline__: 11:59PM on the day of class on week of 17 February 2020.
