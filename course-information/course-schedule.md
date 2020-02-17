@@ -10,11 +10,11 @@
 - ~~[Week 3](#week-3) - jQuery~~
 - ~~[Week 4](#week-4) - jQuery UI~~
 - ~~[Week 5](#week-5) - Phaser [_Project 1 Due_]~~
-- __[Week 6](#week-6) - Voices__
-- [Week 7](#week-7) - Text and Data
+- ~~[Week 6](#week-6) - Voices~~
+- __[Week 7](#week-7) - Sound and Music__
 - [Reading Week](#reading-week)
 - [Week 8](#week-8) - 3D [_Project 2 Due_]
-- [Week 9](#week-9) - Music
+- [Week 9](#week-9) - Text and Data
 - [Week 10](#week-10) - Persistence
 - [Week 11](#week-11) - Sensors
 - [Week 12](#week-12) - Studio
@@ -151,8 +151,8 @@
 
 ---
 
-# Week 6
-# Voices
+# ~~Week 6~~
+# ~~Voices~~
 
 ## Topic
 - __ResponsiveVoice__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/responsivevoice/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/responsivevoice/responsivevoice), [Homepage](https://responsivevoice.org/), [API](https://responsivevoice.org/api/))
@@ -175,28 +175,27 @@
 ---
 
 # Week 7
-# Text and Data
+# Sound and Music
 
 ## Topics
-- __Data__ ([JSON](https://www.w3schools.com/whatis/whatis_json.asp), jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
-- __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
-- See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
-- See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
+- __Pizzicato.js__ ([Homepage](https://alemangui.github.io/pizzicato/))
+- __See also__: Howler.js ([Homepage](https://howlerjs.com/), [Documentation](https://github.com/goldfire/howler.js#documentation))
+- __See also__: Gibber ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
 
 ## Activity
-- __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/data/condiments.zip))
+- __Music Box__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-music-box), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/pizzicato/music-box/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/pizzicato/music-box), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/pizzicato/music-box.zip))
 
 ## Examples
-- __Simple JSON__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/simplejson/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/simplejson/))
-- __Beat Poetry__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/beatpoetry/))
-- __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/hacking/))
-- __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
+- __Page Composition__ (Pizzicato) ([Online](https://pippinbarr.github.io/cart263-2020/examples/pizzicato/page-composition/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/pizzicato/page-composition/))
+- __Foley__ (Howler) ([Online](https://pippinbarr.github.io/cart263-2020/examples/howler/foley/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/howler/foley/))
+- __Drum Machine__ (Gibber) ([Online](https://pippinbarr.github.io/cart263-2020/examples/gibber/drum-machine/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/gibber/drum-machine/))
 
 ## Hand-in
 - [__Assignment 3__](../assignments/assignment3/README.md)
 
 ## Homework
 - [__Project 2__](../projects/project2/README.md)
+- [__Challenge 3__](../assignments/challenge3/README.md)
 
 ---
 
@@ -227,20 +226,23 @@
 ---
 
 # Week 9
-# Music
+# Text and Data
 
 ## Topics
-- __Howler.js__ ([Homepage](https://howlerjs.com/), [Documentation](https://github.com/goldfire/howler.js#documentation))
-- __Pizzicato.js__ ([Homepage](https://alemangui.github.io/pizzicato/))
-- __See also__: __Gibber__ ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
+- __Data__ ([JSON](https://www.w3schools.com/whatis/whatis_json.asp), jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
+- __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
+- See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
+- See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
 ## Activity
-- __Music Box__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-music-box), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/pizzicato/music-box/), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/pizzicato/music-box), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/pizzicato/music-box.zip))
+- __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/data/condiments.zip))
 
 ## Examples
-- __Foley__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/howler/foley/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/howler/foley/))
-- __Page Composition__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/pizzicato/page-composition/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/pizzicato/page-composition/))
-- __Drum Machine__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/gibber/drum-machine/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/gibber/drum-machine/))
+- __Simple JSON__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/simplejson/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/simplejson/))
+- __Beat Poetry__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/beatpoetry/))
+- __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/hacking/))
+- __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
+
 
 ## Homework
 - [__Assignment 4__](../assignments/assignment4/README.md)
