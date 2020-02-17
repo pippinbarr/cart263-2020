@@ -35,7 +35,7 @@ let sfx = {
 
 $(document).ready(function() {
 
-  // Here's a new function! Object.keys() - it allows us to get an array of all the property
+  // Here's a fun function! Object.keys() - it allows us to get an array of all the property
   // names inside an object. In this case the 'sfx' object.
   let tags = Object.keys(sfx);
   // Take a look at this in the console, as it's kind of cool
@@ -60,12 +60,12 @@ $(document).ready(function() {
     // to name them instead of having to write the name explicitly as with dot notation.
     sfx[tag] = tagSFX;
     // Add a hover by selecting the element type with jQuery
-    $(tag).on('mouseover',mouseOver);
+    $(tag).on('mouseover', mouseOver);
   }
 
 });
 
-function mouseOver () {
+function mouseOver(e) {
   // Sadly we can't access elementName in here, so we have to
   // look up the tagname of this element again, which is a bit dumb
   // .prop('tagName') gives us the element name in all caps
