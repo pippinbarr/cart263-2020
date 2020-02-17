@@ -5,7 +5,7 @@
 Music Box
 Pippin Barr
 
-A simple example of procedural music generation using Pizzicato's
+A "simple" example of procedural music generation using Pizzicato's
 synthesis and soundfile playing abilities.
 
 ******************/
@@ -24,7 +24,7 @@ const RELEASE = 0.1;
 // We can get the frequencies of these notes from THE INTERNET, e.g.
 // http://pages.mtu.edu/~suits/notefreqs.html
 let frequencies = [
-  220,246.94,277.18,293.66,329.63,369.99,415.30
+  220, 246.94, 277.18, 293.66, 329.63, 369.99, 415.30
 ];
 // The synth
 let synth;
@@ -36,22 +36,24 @@ let hihat;
 // Each array element is one beat and has a string with each
 // drum to play for that beat
 // x = kick, o = snare, * = hihat
-let pattern = ['x','*','xo*',' ','x','x','xo','*'];
+let pattern = ['x', '*', 'xo*', ' ', 'x', 'x', 'xo', '*'];
 // Which beat of the pattern we're at right now
-let patternIndex = 0;
+let beat = 0;
 
 // setup()
 //
 // Creat canvas, set up the synth and sound files.
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
 
   // Create the synth
   synth = new Pizzicato.Sound({
     source: 'wave',
     options: {
       type: 'sine',
-      frequency: 220
+      frequency: 220,
+      attack: ATTACK,
+      release: RELEASE
     }
   });
 
@@ -84,9 +86,9 @@ function setup() {
 // user interaction (and to give the files time to load)
 function mousePressed() {
   // Start an interval for the notes
-  setInterval(playNote,NOTE_TEMPO);
+  setInterval(playNote, NOTE_TEMPO);
   // Start an interval for the drums
-  setInterval(playDrum,DRUM_TEMPO);
+  setInterval(playDrum, DRUM_TEMPO);
 }
 
 // playNote
@@ -97,7 +99,7 @@ function playNote() {
   let frequency = frequencies[Math.floor(Math.random() * frequencies.length)];
   // Set the synth's frequency
   synth.frequency = frequency;
-  // If it's note already play, play the synth
+  // If it's not already playing, play the synth
   synth.play();
 }
 
@@ -107,27 +109,26 @@ function playNote() {
 // and plays the appropriate sounds
 function playDrum() {
   // Get the symbols for the current beat in the pattern
-  let symbols = pattern[patternIndex];
+  let symbols = pattern[beat];
 
   // If there's an 'x' in there, play the kick
-  if (symbols.indexOf('x') !== -1) {
+  if (symbols.includes('x')) {
     kick.play();
   }
   // If there's an 'o' in there, play the snare
-  if (symbols.indexOf('o') !== -1) {
+  if (symbols.includes('o')) {
     snare.play();
   }
   // If there's an '*' in there, play the hihat
-  if (symbols.indexOf('*') !== -1) {
+  if (symbols.includes('*')) {
     hihat.play();
   }
   // Advance the pattern by a beat
-  patternIndex = (patternIndex + 1) % pattern.length;
+  beat = (beat + 1) % pattern.length;
 }
 
 // draw()
 //
-// Nothing right now.
+// Nothing right now. But imagine the possibilities!
 
-function draw() {
-}
+function draw() {}
