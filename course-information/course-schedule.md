@@ -179,8 +179,6 @@
 
 ## Topics
 - __Pizzicato.js__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/pizzicato/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/pizzicato/pizzicato), [Homepage](https://alemangui.github.io/pizzicato/), [API](https://github.com/alemangui/pizzicato))
-
-([Homepage](https://alemangui.github.io/pizzicato/))
 - __See also__: Howler.js ([Homepage](https://howlerjs.com/), [Documentation](https://github.com/goldfire/howler.js#documentation))
 - __See also__: Gibber ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
 
