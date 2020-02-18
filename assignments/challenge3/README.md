@@ -24,4 +24,4 @@ __NOTE:__ This brief is the bare minimum of additions, please always use these a
 
 ## Starting code
 
-[music-box.zip](../activities/pizzicato/music-box.zip)
+[music-box.zip](../../activities/pizzicato/music-box.zip)
