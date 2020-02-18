@@ -48,7 +48,7 @@
 
 ---
 
-## Obtaining the library
+## Obtaining the library (downloading)
 
 - When we look at the homepage, we don't see an immediate script tag to just copy and paste, what do we see?
 --
@@ -164,13 +164,15 @@ function bark() {
 - We can do this by providing a function that sets the data in an audio buffer, as per their example
 
 ```javascript
-let whiteNoise = new Pizzicato.Sound(function(e) {
+let whiteNoise = new Pizzicato.Sound(noiseGenerator);
+whiteNoise.play();
+
+function noiseGenerator(e) {
   let output = e.outputBuffer.getChannelData(0);
   for (let i = 0; i < e.outputBuffer.length; i++) {
     output[i] = Math.random();
   }
-});
-whiteNoise.play();
+}
 ```
 
 - To actually harness something like this we need to know more about audio programming that I do personally, though see the notes for an example of generating a sine wave and perlin noise
@@ -181,28 +183,32 @@ whiteNoise.play();
 
 ```javascript
 let angle = 0;
-let whiteNoise = new Pizzicato.Sound(function(e) {
+let sineWave = new Pizzicato.Sound(sineGenerator);
+sineWave.play();
+
+function sineGenerator(e) {
   let output = e.outputBuffer.getChannelData(0);
   for (let i = 0; i < e.outputBuffer.length; i++) {
     output[i] = Math.sin(angle);
     angle += 0.1;
   }
-});
-whiteNoise.play();
+}
 ```
 
 - Compare that with what happens if we move the angle variable inside the function:
 
 ```javascript
-let sine = new Pizzicato.Sound(function(e) {
+let sineWave = new Pizzicato.Sound(sineGenerator);
+sineWave.play();
+
+function sineGenerator(e) {
   let angle = 0;
   let output = e.outputBuffer.getChannelData(0);
   for (let i = 0; i < e.outputBuffer.length; i++) {
     output[i] = Math.sin(angle);
     angle += 0.1;
   }
-});
-sine.play();
+}
 ```
 
 - What's going on there?
@@ -210,16 +216,17 @@ sine.play();
 - What would Perlin noise sound like? (Assuming we're using p5 here)
 
 ```javascript
-let angle = 0;
+let time = 0;
+let perlinNoise = new Pizzicato.Sound(perlinGenerator);
+perlinNoise.play();
 
-let perlinNoise = new Pizzicato.Sound(function(e) {
+function perlinGenerator(e) {
   let output = e.outputBuffer.getChannelData(0);
   for (let i = 0; i < e.outputBuffer.length; i++) {
-    output[i] = noise(angle);
-    angle += 0.01;
+    output[i] = noise(time);
+    time += 0.01;
   }
-});
-perlinNoise.play();
+}
 ```
 
 ---

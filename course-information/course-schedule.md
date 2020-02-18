@@ -70,7 +70,7 @@
 
 ## Homework
 - [__Assignment 1: Pixel Painter Pro__](../assignments/assignment1/README.md)
-- [__Project 1__](../projects/project1/README.md) (Start thinking about it)
+- [__Project 1: Happiness is Sisyphus?__](../projects/project1/README.md) (Start thinking about it)
 
 ---
 
@@ -96,7 +96,7 @@
 
 ## Homework
 - [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md) __NOTE: Small grading approach adjustment__
-- [__Project 1__](../projects/project1/README.md)
+- [__Project 1: Happiness is Sisyphus?__](../projects/project1/README.md)
 
 ---
 
@@ -124,7 +124,7 @@
 - [__Assignment 2: Raving Redactionist Redux__](../assignments/assignment2/README.md)
 
 ## Homework
-- [__Project 1__](../projects/project1/README.md)
+- [__Project 1: Happiness is Sisyphus?__](../projects/project1/README.md)
 - (Optional) [__Challenge 2: Eat Up Extension__](../assignments/challenge2/README.md)
 
 ---
@@ -144,10 +144,10 @@
 ## Studio time for [__Project 1__](../projects/project1/README.md)
 
 ## Hand-in
-- [__Project 1__](../projects/project1/README.md)
+- [__Project 1: Happiness is Sisyphus?__](../projects/project1/README.md)
 
 ## Homework
-- [__Project 2__](../projects/project2/README.md) (Start thinking now!)
+- [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
 
 ---
 
@@ -169,8 +169,8 @@
 
 
 ## Homework
-- [__Assignment 3__](../assignments/assignment3/README.md)
-- [__Project 2__](../projects/project2/README.md)
+- [__Assignment 3: Slamina Special__](../assignments/assignment3/README.md)
+- [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
 
 ---
 
@@ -191,11 +191,11 @@
 - __Drum Machine__ (Gibber) ([Online](https://pippinbarr.github.io/cart263-2020/examples/gibber/drum-machine/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/gibber/drum-machine/))
 
 ## Hand-in
-- [__Assignment 3__](../assignments/assignment3/README.md)
+- [__Assignment 3: Slamina Special__](../assignments/assignment3/README.md)
 
 ## Homework
-- [__Project 2__](../projects/project2/README.md)
-- [__Challenge 3__](../assignments/challenge3/README.md)
+- [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
+- [__Challenge 3: Meilleur Music Box__ ](../assignments/challenge3/README.md)
 
 ---
 
@@ -204,7 +204,7 @@
 # No Class
 
 ## Homework
-- [__Project 2__](../projects/project2/README.md)
+- [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
 
 ---
 
@@ -218,7 +218,7 @@
 ## Studio time for [__Project 2__](../projects/project2/README.md)
 
 ## Hand-in
-- [__Project 2__](../projects/project2/README.md)
+- [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
 
 ## Homework
 - [__Project 3__](../projects/project3/README.md)

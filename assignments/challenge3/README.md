@@ -1,4 +1,4 @@
-# Challenge 3: Music Box
+# Challenge 3: Meilleur Music Box
 
 __Optional challenge__
 
