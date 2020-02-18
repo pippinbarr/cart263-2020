@@ -78,12 +78,17 @@
 
 ## Set up a project to use Pizzicato.js
 
-- So, download a [jQuery project template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/jquery-project.zip)
-- Add the librart to `index.html` __above__ your script
+- Just for "fun", download a [p5 project template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/p5-project.zip)
+- Add the library to `index.html` __above__ your script
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.min.js"></script>
 ```
+
+???
+
+- There's no particular reason to use p5 in these slides except to point out the important fact that libraries like Pizzicato work equally well with whatever other framework we might be using
+- We could also use Pizzicato with jQuery just as easily and in exactly the same kinds of ways
 
 ---
 
@@ -93,26 +98,33 @@
 
 ```javascript
 let sineWave = new Pizzicato.Sound({
-    source: 'wave',
-    options: {
-        frequency: 440
-    }
+  source: 'wave',
+  options: {
+    frequency: 440
+  }
 });
 
-sineWave.play();
+function setup() {}
+
+function mousePressed() {
+  sineWave.play();
+}
 ```
 
 - What if we wanted a different waveform?
---
-
-- We have to go into the API documentation to see there is a `type` option which can be `sine`, `square`, `triangle` or `sawtooth`
-- This is a typical experience when working from example code - we should inevitably look at the API to understand the broader possibilities of any one part of a library
 
 ???
 
 - Note that in keeping with our use of ES6 I converted their `var` to a `let`
+
+---
+
+## Other waves
+
+- We have to go into the API documentation to see there is a `type` option which can be `sine`, `square`, `triangle` or `sawtooth`
+- This is a typical experience when working from example code - we should inevitably look at the API to understand the broader possibilities of any one part of a library
 - Note that the documentation for the waveform source includes a bunch of other options, too, including frequency, volume, release, attack, and detached
-- From here we can clearly experiment with elements such as what the different frequencies sound like, as well as to compose music, given that specific frequencies correspond to musical tones
+- From here we can experiment with elements such as what the different frequencies sound like, as well as to compose music, given that specific frequencies correspond to musical tones
 
 ---
 
@@ -126,6 +138,8 @@ let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav', function() {
     // Sound loaded!
     barkSFX.play();
 });
+
+function setup() {}
 ```
 
 - What is the anonymous function here for?
@@ -133,6 +147,22 @@ let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav', function() {
 
 - It is a __callback function__ that is called when the file has __completed loading__, meaning it is safe to play it
 - Again, we need to look at the documentation for the full set of possibilities here, including desired uses like looping
+
+???
+
+- Note we could also load the sound inside `setup()` or even `preload()`, but because Pizzicato isn't really connected to p5 in any way, there's not necessarily any point to this...
+
+```javascript
+
+let barkSFX;
+
+function setup() {
+  barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav', function() {
+      // Sound loaded!
+      barkSFX.play();
+  });
+}
+```
 
 ---
 
@@ -144,11 +174,11 @@ let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav', function() {
 ```javascript
 let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav');
 
-$(document).ready(setup) {
-  $(document).on('click',bark);
-}
+function setup() {}
 
-function bark() {
+function draw() {}
+
+function mousePressed() {
   barkSFX.play();
 }
 ```
@@ -160,12 +190,16 @@ function bark() {
 
 ## Generation
 
-- An exciting, but also daunting, option provided by Pizzicato is to dynamically generate the audio that is played
-- We can do this by providing a function that sets the data in an audio buffer, as per their example
+- An exciting, but also daunting, option provided by Pizzicato is to dynamically generate the audio that is played by providing a function that sets the data in an audio buffer...
 
 ```javascript
 let whiteNoise = new Pizzicato.Sound(noiseGenerator);
-whiteNoise.play();
+
+function setup() {}
+
+function mousePressed() {
+  whiteNoise.play();
+}
 
 function noiseGenerator(e) {
   let output = e.outputBuffer.getChannelData(0);
@@ -175,10 +209,11 @@ function noiseGenerator(e) {
 }
 ```
 
-- To actually harness something like this we need to know more about audio programming that I do personally, though see the notes for an example of generating a sine wave and perlin noise
+- To actually harness something like this we would need to know quite a lot about audio programming!
 
 ???
 
+- I don't know much at all about audio programming, however, we can play with it at least a little intuitively...
 - Here is a sine wave...
 
 ```javascript
@@ -233,7 +268,6 @@ function perlinGenerator(e) {
 
 ## Attack and release
 
-- Two very important basic concepts in sound engineering are attack and release
 - __Attack__ is how long it takes to reach full volume after being started
 - __Release__ is how long it takes to reach zero volume after being stopped
 
@@ -247,8 +281,12 @@ let sineWave = new Pizzicato.Sound({
   }
 });
 
-sineWave.play();
-setTimeout(stopSineWave, 2000);
+function setup() {}
+
+function mousePressed() {
+  sineWave.play();
+  setTimeout(sineWave.stop, 2000);
+}
 
 function stopSineWave() {
   sineWave.stop();
@@ -266,8 +304,8 @@ function stopSineWave() {
 
 ## Effects
 
-- At the heart of the Pizzicato library is a series of effects that can transform whatever sound is being played in a variety of ways
-- Each effect is a __separate object__ that we create and then __add__ to a sound we want to take on the effect
+- At the heart of the Pizzicato library is a series of (quite fun) audio effects
+- Each effect is a __separate object__ that we create and then __add__ to a sound
 
 ```javascript
 let delay = new Pizzicato.Effects.Delay({
@@ -275,14 +313,18 @@ let delay = new Pizzicato.Effects.Delay({
   time: 0.4,
   mix: 0.5
 });
+let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav');
 
-let barkSFX = new Pizzicato.Sound('./assets/sounds/bark.wav', function() {
+function setup() {
   barkSFX.addEffect(delay);
+}
+
+function mousePressed() {
   barkSFX.play();
-});
+}
 ```
 
-- In order to work well with effects we need to get to grips with the specific options either by being an audio engineer or some kind already, or through reading the documentation and experimentation!
+- To work with effects we need to examine the options available (again it can help to be an audio engineer, but experimentation will work too!)
 
 ---
 
