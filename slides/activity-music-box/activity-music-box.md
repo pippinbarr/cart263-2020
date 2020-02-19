@@ -125,6 +125,22 @@ function playNote() {
 }
 ```
 
+- Or, in p5 specifically because the `random()` function can select from arrays:
+
+```javascript
+// playNote
+//
+// Chooses a random frequency and assigns it to the synth
+function playNote() {
+  // Pick a random frequency from the array
+  let frequency = random(frequencies);
+  // Set the synth's frequency
+  synth.frequency = frequency;
+  // If it's not already playing, play the synth
+  synth.play();
+}
+```
+
 ---
 
 ## 5. Play notes on an interval
@@ -138,7 +154,7 @@ Now if you click when the page loads you should hear random notes playing! Deedl
 
 ???
 
-(__Note:__ currently if you click again you'll start another interval. Something to fix in the assignment!)
+(__Note:__ currently if you click again you'll start another interval. Something to fix!)
 
 __Solution__
 
@@ -154,12 +170,14 @@ function mousePressed() {
 
 ## 6. Drum patterns
 
-Unlike notes, it doesn't make as much sense to just play random drums per beat, rather we want to specify a __pattern__ of drums over time. To do that we need some kind of data representation of the drum sequence. We'll do this with an array of strings that specify which drums to play per beat.
+It doesn't make as much sense to just play random drums per beat, rather we want to specify a __pattern__ of beats. So we need some kind of data representation of the drum sequence.
 
 1. Create an array called `pattern`
-2. In the array, store eight empty strings - each one will represent the drums to play for a single beat in order (with the overall pattern being eight beats)
-3. In each string enter symbols for the drums you want to play for that beat (use `x` for kick, `o` for snare, and `*` for hihat)
+2. In the array, store eight empty strings - each one will represent the drum type to play for a single beat in order
+3. In each string enter the symbol for the drum you want to play for that beat (use `x` for kick, `o` for snare, `*` for hihat, and an empty string for no drum)
 4. Create a variable called `beat` set to `0` that will track which beat in the array we're up to
+
+Example pattern array: `['x','','o','','x','x','*','*']`
 
 ???
 
@@ -170,7 +188,7 @@ __Solution__
 // Each array element is one beat and has a string with each
 // drum to play for that beat
 // x = kick, o = snare, * = hihat
-let pattern = ['x','*','xo*',' ','x','x','xo','*'];
+let pattern = ['x','*','x',' ','x','x','o','*'];
 // Which beat of the pattern we're at right now
 let beat = 0;
 ```
@@ -179,12 +197,12 @@ let beat = 0;
 
 ## 7. Playing drums
 
-Now we need a function to be called on an interval that will play the current drum sounds for the current beat. Create a function called `playDrum()` and in it:
+Now we need a function to be called on an interval that will play the current drum sound for the current beat. Create a function called `playDrum()` and in it:
 
-1. Get the current `beat` in the `pattern` array and store it in a variable (call it `symbols` perhaps)
-2. For each drum symbol (`x`, `o`, and `*`) write an `if` statement that uses `symbols.includes()` to check if that drum symbol appears in the current beat symbols (note that `.includes()` returns `true` or `false`)
-3. If it does appear, tell play the correct drum sound to play
-4. Finally, advance `beat` by 1 and set it back to `0` if it reaches the end of the `pattern` array
+1. Get the current beat symbol in the `pattern` array (using the `beat` variable as an index) and store the result in a variable called `drum`
+2. For __each drum symbol__ (`x`, `o`, and `*`) write an `if` statement that checks if the drum symbol for the current beat matches it
+  1. If so, tell play the correct drum sound to play
+4. Advance `beat` by 1 and set it back to `0` if it reaches the end of the `pattern` array
 
 ???
 
@@ -193,18 +211,18 @@ __Solution__
 ```javascript
 function playDrum() {
   // Get the symbols for the current beat in the pattern
-  let symbols = pattern[beat];
+  let drum = pattern[beat];
 
-  // If there's an 'x' in there, play the kick
-  if (symbols.includes('x')) {
+  // If it's an 'x', play the kick
+  if (drum === 'x') {
     kick.play();
   }
-  // If there's an 'o' in there, play the snare
-  if (symbols.includes('o')) {
+  // If it's an 'o', play the snare
+  if (drum === 'o') {
     snare.play();
   }
-  // If there's an '*' in there, play the hihat
-  if (symbols.includes('*')) {
+  // If it's an '*', play the hihat
+  if (drum === '*') {
     hihat.play();
   }
   // Advance the pattern by a beat
