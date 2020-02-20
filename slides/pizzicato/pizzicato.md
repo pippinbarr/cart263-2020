@@ -328,6 +328,39 @@ function mousePressed() {
 
 ---
 
+## Changing effect properties dynamically
+
+```javascript
+let ring = new Pizzicato.Effects.RingModulator({
+  speed: 30,
+  distortion: 1,
+  mix: 0.5
+});
+
+let barkSFX = new Pizzicato.Sound({
+  source: 'file',
+  options: {
+    path: './assets/sounds/bark.wav',
+    loop: true
+  }
+});
+
+function setup() {
+  barkSFX.addEffect(ring);
+}
+
+function draw() {
+  ring.speed = map(mouseX, 0, windowWidth, 0, 2000);
+  ring.distortion = map(mouseY, 0, windowHeight, 0, 50);
+}
+
+function mousePressed() {
+  barkSFX.play();
+}
+```
+
+---
+
 ## There's not much more?
 
 - As another highly specific library, Pizzicato doesn't require the same kind of extreme mastery as something like p5 or jQuery
