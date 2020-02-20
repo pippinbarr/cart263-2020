@@ -285,7 +285,7 @@ function setup() {}
 
 function mousePressed() {
   sineWave.play();
-  setTimeout(sineWave.stop, 2000);
+  setTimeout(stopSineWave, 2000);
 }
 
 function stopSineWave() {
