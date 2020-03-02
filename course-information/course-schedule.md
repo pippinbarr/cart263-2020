@@ -11,12 +11,12 @@
 - ~~[Week 4](#week-4) - jQuery UI~~
 - ~~[Week 5](#week-5) - Phaser [_Project 1 Due_]~~
 - ~~[Week 6](#week-6) - Voices~~
-- __[Week 7](#week-7) - Sound and Music__
-- [Reading Week](#reading-week)
-- [Week 8](#week-8) - 3D [_Project 2 Due_]
+- ~~[Week 7](#week-7) - Sound and Music~~
+- ~~[Reading Week](#reading-week)~~
+- __[Week 8](#week-8) - 3D [_Project 2 Due_]__
 - [Week 9](#week-9) - Text and Data
 - [Week 10](#week-10) - Persistence
-- [Week 11](#week-11) - Sensors
+- [Week 11](#week-11) - Sensors?
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
 - ["Week 14"](#week-14) - [_Project 3 Due_]
@@ -174,8 +174,8 @@
 
 ---
 
-# Week 7
-# Sound and Music
+# ~~Week 7~~
+# ~~Sound and Music~~
 
 ## Topics
 - __Pizzicato.js__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/pizzicato/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/pizzicato/pizzicato), [Homepage](https://alemangui.github.io/pizzicato/), [API](https://github.com/alemangui/pizzicato#table-of-contents))
@@ -200,8 +200,8 @@
 ---
 
 
-# Reading Week
-# No Class
+# ~~Reading Week~~
+# ~~No Class~~
 
 ## Homework
 - [__Project 2: Something is Wrong on the Internet__](../projects/project2/README.md)
