@@ -13,6 +13,8 @@ __If you find something amazing to add to this then email Pippin!__
 - [Phaser 3](#phaser-3)
 - [ResponsiveVoice](#responsivevoice)
 - [Annyang!](#annyang)
+- [A-Frame](#a-frame)
+- [Three.js](#three-js)
 - [localStorage](#annyang)
 
 ## Project templates
@@ -139,6 +141,23 @@ __If you find something amazing to add to this then email Pippin!__
 
 - [annyang Homepage](https://www.talater.com/annyang/)
 - [annyang API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
+
+## A-Frame
+
+### Reference
+
+- [A-Frame Homepage](https://aframe.io/),
+- [A-Frame School](https://aframe.io/aframe-school/#/) (very nice tutorial)
+- [A-Frame Documentation](https://aframe.io/docs/0.9.0/introduction/)
+
+## Three.js
+
+### Reference
+
+- [Homepage](https://threejs.org/)
+- [Examples](https://threejs.org/examples/)
+- [Documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene))
+
 
 ## localStorage
 
