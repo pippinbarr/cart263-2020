@@ -235,13 +235,14 @@
 - See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
 ## Activity
-- __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/data/condiments.zip))
+- __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2020/activities/json/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2020/tree/master/activities/json/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2020/activities/json/condiments.zip))
 
 ## Examples
-- __Simple JSON__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/simplejson/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/simplejson/))
-- __Beat Poetry__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/beatpoetry/))
-- __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/hacking/))
-- __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
+- __Simple JSON__ (Uses `$.getJSON()` to load JSON) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/simplejson/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/simplejson/))
+- __Loading multiple JSON files in jQuery__ (Uses `$.when()`, `$.then()` and `$.getJSON()` to load JSON) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/loading-multiple-json-files-in-jquery/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/loading-multiple-json-files-in-jquery/))
+- __Beat Poetry__ (Uses `$.ajax()` to load text) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/beatpoetry/))
+- __You Are Hacking Into the Mainframe__ (Uses `$.ajax()` to load text) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/hacking/))
+- __Frankenstein and Prejudice, a novel__ (Uses RiTA) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
 
 
 ## Homework

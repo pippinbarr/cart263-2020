@@ -1,4 +1,4 @@
-# Activity: Condiments
+# Activity: Condiments {
 
 ---
 
@@ -6,14 +6,14 @@
 
 An experience in which:
 
-- We see a randomly generated description of a condiment!
+- We see a randomly generated description of a condiment based on loaded data!
 
 ---
 
 ## 1. Start a project
 
-1. Download the [template jQuery project](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-jquery-project.zip)
-2. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2019/master/activities/data/condiments/data/data.json) and put it in a `data` folder in your project
+1. Download the [template jQuery project](https://github.com/pippinbarr/cart263-2020/raw/master/templates/template-jquery-project.zip)
+2. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/data/condiments/data/data.json) and put it in a `assets/data` folder in your project
 
 ---
 
@@ -51,11 +51,17 @@ __Solution__
 $(document).ready(setup);
 
 function setup() {
-  $.getJSON('data/data.json',dataLoaded);
+  $.getJSON('data/data.json')
+    .done(dataLoaded)
+    .error(dataError)
 }
 
 function dataLoaded(data) {
   console.log(data);
+}
+
+function dataError(request, text, error) {
+  console.error(error);
 }
 ```
 
@@ -66,7 +72,7 @@ function dataLoaded(data) {
 Because we're going to want to select random elements from arrays more than once, let's write a function to do that
 
 1. Define a function called `getRandomElement()` that takes one argument, the array to select an element from
-1. In the function, choose a random element from the array passed in the argument
+1. In the function, we choose a random element from the array passed in the argument
 1. Return this element from the function
 
 ???
@@ -82,7 +88,7 @@ function getRandomElement(array) {
 
 ---
 
-## 5. Choose random condiment
+## 5. Choose a random condiment
 
 In your `dataLoaded()` function
 
@@ -102,15 +108,15 @@ function dataLoaded(data) {
 
 ---
 
-## 6. Choose appropriate verb
+## 6. Choose a verb
 
-We want to use 'is' if the condiment is singular and 'are' if it's plural. The simplest way to do this is to check if the condiment's name ends with an 's', so after you have your random condiment
+We want to use 'is' if the condiment is singular and 'are' if it's plural. The simplest way to do this is to check if the condiment's name ends with an 's'
 
 1. Declare a variable called `verb` with value `'is'`
-2. Write an if-statement that checks if the last letter of the condiment is an 's' and if it is, changes `verb` to `'are'` (you'll need to use `.charAt()` to check the last character, so look it up - remember you can get the length of a string with `.length`)
+2. Write an if-statement that checks if the last letter of the condiment is an 's' and if it is, changes `verb` to `'are'` (we'll use `.charAt()` to check the last character - remember we can get the length of a string with `.length`)
 3. Log the verb out to the console
 
-If you keep reloading the page, you should see the verb as "is" when the condiment has no "s" and "are" when it does.
+If we keep reloading the page, you should see the verb as "is" when the condiment has no "s" and "are" when it does.
 
 ???
 
@@ -125,8 +131,11 @@ function dataLoaded(data) {
   if (condiment.charAt(condiment.length - 1) === 's') {
     verb = 'are';
   }
+  console.log(verb);
 }
 ```
+
+- This isn't perfect, because not all plurals end in 's' and not every word ending in 's' is a plural. Oh well.
 
 ---
 
@@ -149,6 +158,7 @@ function dataLoaded(data) {
   if (condiment.charAt(condiment.length - 1) === 's') {
     verb = 'are';
   }
+  console.log(verb);
   let cat = getRandomElement(data.cats);
   console.log(cat);
   let room = getRandomElement(data.rooms);
@@ -160,7 +170,7 @@ function dataLoaded(data) {
 
 ## 8. Create a template string and add it to the page
 
-1. Create a variable called `description` containing a [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Expression_interpolation) of the form "CONDIMENT IS/ARE like a CAT in a ROOM" (where the capitalised words are replaced by our variables)
+1. Create a variable called `description` containing a template string of the form "CONDIMENT IS/ARE like a CAT in a ROOM" (where the capitalised words are replaced by our variables)
 2. Add the resulting `description` to the page using `.append()`
 
 ???
@@ -174,6 +184,7 @@ function dataLoaded(data) {
   if (condiment.charAt(condiment.length - 1) === 's') {
     verb = 'are';
   }
+  console.log(verb);
   let cat = getRandomElement(data.cats);
   console.log(cat);
   let room = getRandomElement(data.rooms);
@@ -182,12 +193,6 @@ function dataLoaded(data) {
   $('body').append(description);
 }
 ```
-
----
-
-## Done!
-
-Nice job!
 
 ---
 
