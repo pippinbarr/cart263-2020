@@ -34,30 +34,49 @@ $(document).ready(function() {
     // Load Pride and Prejudice
     $.ajax({
       url: 'data/pride-and-prejudice.txt',
-      dataType: 'text',
-      success: function (data) {
-        // When loaded, we store the data (a string containing the book)
-        // in the appropriate variable
-        prideAndPrejudiceText = data;
-      }
-    }),
+      dataType: 'text'
+    })
+    .done(loadedPrideAndPrejudice)
+    .fail(dataError),
     // Load Frankenstein
     $.ajax({
       url: 'data/frankenstein.txt',
       dataType: 'text',
-      success: function (data) {
-        // When loaded, we store the data (a string containing the book)
-        // in the appropriate variable
-        frankensteinText = data;
-      }
     })
-  ).then(gotData); // When finished we call gotData() to carry on with the show
+    .done(loadedFrankenstein)
+    .fail(dataError)
+  ).then(gotAllData); // When finished we call gotData() to carry on with the show
 });
 
-// gotData (data)
+// loadedPrideAndPrejudice()
+//
+// Stores the book in our variable
+function loadedPrideAndPrejudice(data) {
+  // When loaded, we store the data (a string containing the book)
+  // in the appropriate variable
+  prideAndPrejudiceText = data;
+}
+
+// loadedFrankenstein()
+//
+// Stores the book in our variable
+function loadedFrankenstein(data) {
+  // When loaded, we store the data (a string containing the book)
+  // in the appropriate variable
+  frankensteinText = data;
+}
+
+// dataError()
+//
+// Called if there's an error and reports it to the console
+function dataError(request, text, error) {
+  console.error(error);
+}
+
+// gotAllData (data)
 //
 // Called when .ajax has loaded our two books.
-function gotData () {
+function gotAllData() {
   // Join the two texts together into a single string
   let allText = frankensteinText + ' ' + prideAndPrejudiceText;
   // Create a Markov chain generator
@@ -67,7 +86,7 @@ function gotData () {
   // Generate a paragraph of text
   generateParagraph();
   // Also start listening for a click on the text to change it
-  $('#content').on('click',generateParagraph);
+  $('#content').on('click', generateParagraph);
 }
 
 // generateParagraph()

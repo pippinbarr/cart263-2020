@@ -39,7 +39,7 @@ let voiceParameters = {
 $(document).ready(function() {
 
   // A click handler to avoid sound interaction problems
-  $(document).on('click',function () {
+  $(document).on('click', function() {
     $('#click-to-start').remove();
     // Load our own script file as text
 
@@ -47,17 +47,54 @@ $(document).ready(function() {
     // for requesting data from files/urls. It stands for:
     // Asynchronous JavaScript And XML
     $.ajax({
-      url: 'js/script.js', // Location of the file
-      success: gotData, // Function to call when data is ready
-      dataType: 'text' // The type of data we're requesting
-    });
-    // Every beat poet needs erratic drumming as accompaniment,
-    // so start that up
-    startDrums();
+        url: 'js/script.js',
+        dataType: 'text'
+      })
+      .done(gotData)
+      .fail(dataError);
   });
 
-
 });
+
+// gotData (data)
+//
+// Called when .ajax has loaded our script.js file. The parameter will be
+// the file loaded as a string of text
+function gotData(data) {
+  // Split the file into lines based on the 'carriage return' character \n
+  // .split() returns an ARRAY
+  poem = data.split('\n');
+
+  // Every beat poet needs erratic drumming as accompaniment,
+  // so start that up
+  startDrums();
+
+  // Speak the next line of the poem... (the first one in this case)
+  speakNextLine();
+}
+
+// dataError()
+//
+// Called if there's a problem loading the JSON and reports it to the console
+function dataError(request, text, error) {
+  console.error(error);
+}
+
+// speakNextLine ()
+//
+// Speaks the next line of the poem
+function speakNextLine() {
+  // Make sure we're not at the end of the poem
+  if (currentLine < poem.length) {
+    // Speak the current line in the poem array
+    // Note that in voiceParameters we have set onend to call
+    // speakNextLine - so after one line is finished, it will
+    // speak the next.
+    responsiveVoice.speak(poem[currentLine], "UK English Male", voiceParameters);
+    // Increase the current line
+    currentLine++;
+  }
+}
 
 // startDrums ()
 //
@@ -73,7 +110,7 @@ function startDrums() {
 
   // Possible drum types
   // x=snare, o=kick, -=closed hihat, *=open hihat, .=nothing
-  let drumSymbols = ['x','o','-','*','.'];
+  let drumSymbols = ['x', 'o', '-', '*', '.'];
 
   // This is the string we'll create our loop in
   let drumString = '';
@@ -84,33 +121,5 @@ function startDrums() {
     drumString += drumSymbols[Math.floor(Math.random() * drumSymbols.length)];
   }
   // Finally, create our drums with the string with a note length of 1/8
-  let b = EDrums(drumString,1/8);
-}
-
-// gotData (data)
-//
-// Called when .ajax has loaded our script.js file. The parameter will be
-// the file loaded as a string of text
-function gotData (data) {
-  // Split the file into lines based on the 'carriage return' character \n
-  // .split() returns an ARRAY
-  poem = data.split('\n');
-  // Speak the next line of the poem...
-  speakNextLine();
-}
-
-// speakNextLine ()
-//
-// Speaks the next line of the poem
-function speakNextLine () {
-  // Make sure we're not at the end of the poem
-  if (currentLine < poem.length) {
-    // Speak the current line in the poem array
-    // Note that in voiceParameters we have set onend to call
-    // speakNextLine - so after one line is finished, it will
-    // speak the next.
-    responsiveVoice.speak(poem[currentLine],"UK English Male",voiceParameters);
-    // Increase the current line
-    currentLine++;
-  }
+  let b = EDrums(drumString, 1 / 8);
 }

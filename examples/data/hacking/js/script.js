@@ -50,7 +50,7 @@ $(document).ready(function() {
   $('#window').hide();
 
   // A click handler to avoid sound interaction problems
-  $(document).on('click',function () {
+  $(document).on('click', function() {
     $('#click-to-start').remove();
     $('#window').show();
 
@@ -58,10 +58,11 @@ $(document).ready(function() {
     // Note that we use $.ajax here rather than $.loadJSON
     // because we're loading a text file
     $.ajax({
-      url: 'js/script.js', // Location of the file
-      success: gotData, // Function to call when data is ready
-      dataType: 'text' // The type of data we're requesting
-    });
+        url: 'js/script.js', // Location of the file
+        dataType: 'text' // The type of data we're requesting
+      })
+      .done(gotData)
+      .fail(dataError);
 
     // Listen for keypresses (for typing/hacking)
     $(document).keypress(keyPressed);
@@ -70,7 +71,7 @@ $(document).ready(function() {
     startDrums();
 
     // Start the voice chanting 'you are hacking into the mainframe'
-    setInterval(makeAnnouncement,ANNOUNCEMENT_DELAY);
+    setInterval(makeAnnouncement, ANNOUNCEMENT_DELAY);
 
     // Pop up a hacking dialog
     showDialog();
@@ -84,10 +85,17 @@ $(document).ready(function() {
 //
 // Called when .ajax has loaded our script.js file
 
-function gotData (data) {
+function gotData(data) {
   // Split the file into lines based on the 'carriage return' character \n
   // .split() returns an ARRAY
   code = data.split('\n');
+}
+
+// dataError()
+//
+// Called when there's a problem loading the data and reports it to the console
+function dataError(request, text, error) {
+  console.error(error);
 }
 
 
@@ -95,7 +103,7 @@ function gotData (data) {
 //
 // Called on keypress. Should add a character of code to the window
 
-function keyPressed (event) {
+function keyPressed(event) {
 
   // Make sure there's code available to type
   if (!code) {
@@ -157,7 +165,7 @@ function startDrums() {
   Gibber.init();
 
   // Our drum loop
-  let drums = new EDrums('x.xox-x.x.xoxxx-',1/16);
+  let drums = new EDrums('x.xox-x.x.xoxxx-', 1 / 16);
 }
 
 
@@ -166,8 +174,8 @@ function startDrums() {
 // Just use responsiveVoice to say you are hacking into the mainframe
 // Then queue it up again
 
-function makeAnnouncement () {
-  responsiveVoice.speak("You are hacking into the mainframe","UK English Female",voiceParameters);
+function makeAnnouncement() {
+  responsiveVoice.speak("You are hacking into the mainframe", "UK English Female", voiceParameters);
 }
 
 
@@ -175,13 +183,13 @@ function makeAnnouncement () {
 //
 // Create a dialog box, then queue up showing a new one
 
-function showDialog () {
+function showDialog() {
   // Create a dialog box and show it on the screen
   createDialog();
 
   // Set a timeout for displaying another new dialog
   // Using loDash library to get a random number in a range!
-  setTimeout(showDialog,_.random(DIALOG_DELAY_MIN,DIALOG_DELAY_MAX));
+  setTimeout(showDialog, _.random(DIALOG_DELAY_MIN, DIALOG_DELAY_MAX));
 
   // let a = ["sheep","cow","chicken"];
   // let r = _.sample(a);
@@ -193,14 +201,14 @@ function showDialog () {
 //
 // Generates a jQuery UI dialog box and puts it on the screen
 
-function createDialog () {
+function createDialog() {
   // Choose a random location for the dialog to appear at
   // using a library called loDash
   // that has a whole bunch of 'helper' functions to do common
   // tasks more easily. In this case, selecting a random number
   // in a range.
-  let x = _.random(0,$(window).width());
-  let y = _.random(0,$(window).height());
+  let x = _.random(0, $(window).width());
+  let y = _.random(0, $(window).height());
 
   // Generate the element for the dialog
   // This HTML is just taken from jQuery UI example code
