@@ -242,12 +242,12 @@
 - __Loading multiple JSON files in jQuery__ (Uses `$.when()`, `$.then()` and `$.getJSON()` to load JSON) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/loading-multiple-json-files-in-jquery/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/loading-multiple-json-files-in-jquery/))
 - __Beat Poetry__ (Uses `$.ajax()` to load text) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/beatpoetry/))
 - __You Are Hacking Into the Mainframe__ (Uses `$.ajax()` to load text) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/hacking/))
-- __Frankenstein and Prejudice, a novel__ (Uses RiTA) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
+- __Frankenstein and Prejudice, a novel__ (Uses RiTA for Markov chaining and `$.ajax()` to load text) ([Online](https://pippinbarr.github.io/cart263-2020/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/data/frankenstein-and-prejudice/))
 
 
 ## Homework
-- [__Assignment 4__](../assignments/assignment4/README.md)
-- [__Project 3__](../projects/project3/README.md)
+- [__Assignment 4: Condiments Cacophony__](../assignments/assignment4/README.md)
+- [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
 ---
 
@@ -263,11 +263,11 @@
 - __Let's Play: Ancient Greek Punishment: Teaches Typing__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing/), [Source Code](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing/)) [Uses localStorage to track whether or not the player has unlocked the Camus level.]
 
 ## Hand-in
-- [__Assignment 4__](../assignments/assignment4/README.md)
+- [__Assignment 4: Condiments Cacophony__](../assignments/assignment4/README.md)
 
 ## Homework
 - [__Assignment 5__](../assignments/assignment5/README.md)
-- [__Project 3__](../projects/project3/README.md)
+- [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
 ---
 
@@ -280,32 +280,35 @@
 
 ## Examples
 
-## Studio time for [__Project 3__](../projects/project3/README.md)
+## Studio time for [__Project 3: This Time It's Personal__](../projects/project3/README.md)
+
 
 ## Hand-in
 - [__Assignment 5__](../assignments/assignment5/README.md)
 
 ## Homework
-- [__Project 3__](../projects/project3/README.md)
+- [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
 ---
 
 # Week 12
 # Studio
 
-## Studio time for [__Project 3__](../projects/project3/README.md)
+## Studio time for [__Project 3: This Time It's Personal__](../projects/project3/README.md)
+
 
 ## Homework
-- [__Project 3__](../projects/project3/README.md)
+- [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
 ---
 
 # Week 13
 # Studio
 
-## Studio time for [__Project 3__](../projects/project3/README.md)
+## Studio time for [__Project 3: This Time It's Personal__](../projects/project3/README.md)
+
 
 ---
 
 # "Week 14"
-# [__Project 3__ due](../projects/project3/README.md)
+- [__Project 3: This Time It's Personal__](../projects/project3/README.md) is due end of this week

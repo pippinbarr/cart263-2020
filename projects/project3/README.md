@@ -1,4 +1,4 @@
-# Project 3:
+# Project 3: This Time It's Personal
 
 __Grade__: 40% of final grade (see grading rubric below)  
 __Deadline__: 11:59PM on Sunday, 19 April 2019.
