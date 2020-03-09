@@ -13,8 +13,8 @@
 - ~~[Week 6](#week-6) - Voices~~
 - ~~[Week 7](#week-7) - Sound and Music~~
 - ~~[Reading Week](#reading-week)~~
-- __[Week 8](#week-8) - 3D [_Project 2 Due_]__
-- [Week 9](#week-9) - Text and Data
+- ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
+- __[Week 9](#week-9) - JSON__
 - [Week 10](#week-10) - Persistence
 - [Week 11](#week-11) - Sensors?
 - [Week 12](#week-12) - Studio
@@ -208,8 +208,8 @@
 
 ---
 
-# Week 8
-# 3D, Project 2 hand-in
+# ~~Week 8~~
+# ~~3D, Project 2 hand-in~~
 
 ## Topic
 - __A-Frame__ ([Homepage](https://aframe.io/), [A-Frame School](https://aframe.io/aframe-school/#/), [Documentation](https://aframe.io/docs/0.9.0/introduction/))
@@ -226,11 +226,11 @@
 ---
 
 # Week 9
-# Text and Data
+# JSON
 
 ## Topics
-- __Data__ ([JSON](https://www.w3schools.com/whatis/whatis_json.asp), jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
-- __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
+- __JSON__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/json/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/json/json))
+- See also: __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
 - See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
 - See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
