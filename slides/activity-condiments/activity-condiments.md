@@ -12,8 +12,8 @@ An experience in which:
 
 ## 1. Start a project
 
-1. Download the [template jQuery project](https://github.com/pippinbarr/cart263-2020/raw/master/templates/template-jquery-project.zip)
-2. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/data/condiments/data/data.json) and put it in a `data` folder in your project
+1. Download the [template jQuery project](https://github.com/pippinbarr/cart263-2020/raw/master/templates/jquery-project.zip)
+2. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2020/master/activities/json/condiments/data/data.json) and put it in a `data` folder in your project
 
 ---
 
