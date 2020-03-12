@@ -228,6 +228,9 @@
 # Week 9
 # JSON
 
+- Download the [jQuery Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/jquery-project.zip) and [p5 Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/p5-project.zip) to follow along
+
+
 ## Topics
 - __JSON__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/json/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/json/json))
 - See also: __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
