@@ -1,0 +1,14 @@
+body {
+  font-family: Courier, monospace;
+  font-size: 2em;
+  margin: 10vw;
+}
+
+button {
+  font-family: Courier, monospace;
+  font-size: 1em;
+}
+
+#name-input {
+  display: none;
+}

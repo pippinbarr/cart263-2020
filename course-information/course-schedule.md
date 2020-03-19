@@ -14,10 +14,10 @@
 - ~~[Week 7](#week-7) - Sound and Music~~
 - ~~[Reading Week](#reading-week)~~
 - ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
-- __[Week 9](#week-9) - JSON__
-- [Week 10](#week-10) - Persistence
-- [Week 11](#week-11) - Sensors?
-- [Week 12](#week-12) - Studio
+- ~~[Week 9](#week-9) - JSON__~~
+- [Week 10](#week-10) - COVID-19 cancellation
+- [Week 11](#week-11) - Persistence
+- [Week 12](#week-12) - Sensors?
 - [Week 13](#week-13) - Studio
 - ["Week 14"](#week-14) - [_Project 3 Due_]
 
@@ -225,8 +225,8 @@
 
 ---
 
-# Week 9
-# JSON
+# ~~Week 9~~
+# ~~JSON~~
 
 - Download the [jQuery Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/jquery-project.zip) and [p5 Project Template](https://github.com/pippinbarr/cart263-2020/raw/master/templates/p5-project.zip) to follow along
 
@@ -254,13 +254,20 @@
 
 ---
 
-# Week 10
+# ~~Week 10~~
+
+## ~~COVID-19 cancels all classes at Concordia~~
+
+---
+
+# Week 11
 # Persistence
 
 ## Topic
 - __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/localstorage/localstorage))
 
 ## Examples
+- __Animal Lover__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/animal-lover/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/animal-lover/))
 - __Notepad__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/notepad/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/notepad/))
 - __Fridge Poetry__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/fridgepoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/fridgepoetry/))
 - __Let's Play: Ancient Greek Punishment: Teaches Typing__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing/), [Source Code](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing/)) [Uses localStorage to track whether or not the player has unlocked the Camus level.]
@@ -274,8 +281,8 @@
 
 ---
 
-# Week 11
-# Sensors
+# Week 12
+# Sensors?
 
 ## Topic
 
@@ -288,17 +295,6 @@
 
 ## Hand-in
 - [__Assignment 5__](../assignments/assignment5/README.md)
-
-## Homework
-- [__Project 3: This Time It's Personal__](../projects/project3/README.md)
-
----
-
-# Week 12
-# Studio
-
-## Studio time for [__Project 3: This Time It's Personal__](../projects/project3/README.md)
-
 
 ## Homework
 - [__Project 3: This Time It's Personal__](../projects/project3/README.md)
