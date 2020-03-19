@@ -282,13 +282,7 @@
 ---
 
 # Week 12
-# Sensors?
-
-## Topic
-
-## Activity
-
-## Examples
+# Studio
 
 ## Studio time for [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
