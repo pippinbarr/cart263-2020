@@ -17,7 +17,7 @@
 - ~~[Week 9](#week-9) - JSON__~~
 - ~~[Week 10](#week-10) - COVID-19 cancellation~~
 - [Week 11](#week-11) - Persistence
-- [Week 12](#week-12) - Sensors?
+- [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
 - ["Week 14"](#week-14) - [_Project 3 Due_]
 
