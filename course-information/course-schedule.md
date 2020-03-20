@@ -276,7 +276,7 @@
 - [__Assignment 4: Condiments Cacophony__](../assignments/assignment4/README.md)
 
 ## Homework
-- [__Assignment 5__](../assignments/assignment5/README.md)
+- [__Assignment 5: Project Prototype__](../assignments/assignment5/README.md)
 - [__Project 3: This Time It's Personal__](../projects/project3/README.md)
 
 ---
@@ -288,7 +288,7 @@
 
 
 ## Hand-in
-- [__Assignment 5__](../assignments/assignment5/README.md)
+- [__Assignment 5: Project Prototype__](../assignments/assignment5/README.md)
 
 ## Homework
 - [__Project 3: This Time It's Personal__](../projects/project3/README.md)
