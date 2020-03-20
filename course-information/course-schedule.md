@@ -263,11 +263,13 @@
 # Week 11
 # Persistence
 
+__Note:__ This week there is recorded video for the `localStorage` lecture and for the Animal Lover example code. You can find these by going to the course Moodle, scrolling to this week, and then selecting the video link. Once there it will list videos associated with the course, which are named "localStorage" (for the main lecture) and "localStorage: Animal Lover example" for the example.
+
 ## Topic
-- __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2020/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/localstorage/localstorage))
+- __localStorage__ (__See Moodle for video of lecture__, [Slides](https://pippinbarr.github.io/cart263-2020/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2020/slides/localstorage/localstorage))
 
 ## Examples
-- __Animal Lover__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/animal-lover/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/animal-lover/))
+- __Animal Lover__ (__See Moodle for video of example__, [Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/animal-lover/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/animal-lover/))
 - __Notepad__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/notepad/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/notepad/))
 - __Fridge Poetry__ ([Online](https://pippinbarr.github.io/cart263-2020/examples/localstorage/fridgepoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2020/tree/master/examples/localstorage/fridgepoetry/))
 - __Let's Play: Ancient Greek Punishment: Teaches Typing__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing/), [Source Code](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing/)) [Uses localStorage to track whether or not the player has unlocked the Camus level.]
