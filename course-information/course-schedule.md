@@ -15,7 +15,7 @@
 - ~~[Reading Week](#reading-week)~~
 - ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
 - ~~[Week 9](#week-9) - JSON__~~
-- [Week 10](#week-10) - COVID-19 cancellation
+- ~~[Week 10](#week-10) - COVID-19 cancellation~~
 - [Week 11](#week-11) - Persistence
 - [Week 12](#week-12) - Sensors?
 - [Week 13](#week-13) - Studio
