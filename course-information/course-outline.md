@@ -70,8 +70,8 @@ Specific evaluation requirements will be provided when assigned.
    * 5 pass/fail exercises worth 2% each
 * Projects (70%)
   * Project 1 (10%)
-  * Project 2 (20%)
-  * Project 3 (40%)
+  * Project 2 (20% if lower grade than Project 3, 40% if higher)
+  * Project 3 (40% if higher grade than Project 2, 20% if lower)
 * Participation (20%)
    * Participation includes attendance, asking questions, asking for help, contributing to discussions, editing the wiki to share ideas, participating in critiques, and coming to office hours (even if it's just to show off your work!)
 
